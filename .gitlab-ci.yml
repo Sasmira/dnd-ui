@@ -1,0 +1,21 @@
+image: python:3-alpine
+
+before_script:
+  - apk update
+  - apk add zip
+
+stages:
+  - build
+
+build:
+  stage: build
+  script:
+    - zip dnd-ui.zip -r module -x ".*"
+  artifacts:
+    name: dnd-ui
+    when: on_success
+    paths:
+      - dnd-ui.zip
+  when: on_success
+  only:
+    - tags
