@@ -1,0 +1,646 @@
+/*************************************************************/
+/*======================= SIDEBAR ===========================*/
+/*************************************************************/
+
+#sidebar {
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    position: fixed;
+    right: 5px;
+    top: 5px;
+    /* 400 */
+    width: 350px !important;
+    height: 99vh;
+    overflow: hidden;
+    margin: 0;
+    /* padding: 30px 0 0 10px; */
+    border: 30px solid transparent;
+    border-image-source: url(../ui/frames/Chat-box.png);
+    border-image-slice: 30 fill;
+    /* display: inline-block !important; */
+    background-position: center !important;
+    background-size: 300px 100%!important;
+    background-repeat: no-repeat;
+}
+
+.collapse::before{
+    content: "";
+}
+
+#sidebar.collapsed {
+    width: 75px !important;
+    /* If you use Progress Clocks, uncomment the following */
+    /* height: 410px !important; */
+    /* If you use Progress Clocks, 375 comment out the following line */
+    height: 410px !important;
+    padding-left: 5px;
+    border: 15px solid transparent;
+    border-image-source: url(../ui/frames/Chat-box.png);
+    border-image-slice: 35 fill;
+    background-position: center !important;
+    background-size: 100% 100%!important;
+    background-repeat: no-repeat;
+}
+
+#sidebar-tabs{
+    text-align: center;
+}
+
+#sidebar #sidebar-tabs > .item {
+    line-height: 0px;
+}
+
+#sidebar #sidebar-tabs i.fa-comments {
+    content: "";
+    background-image: url("../ui/sidebar/sidebar_button-chat.png") !important;
+    width: 24px !important;
+    height: 25px !important;
+    display: inline-block !important;
+    background-position:center !important;
+    background-size:cover !important;
+}
+#sidebar-tabs {
+    height: 64px;
+}
+#sidebar-tabs > .item {
+    line-height: 0px;
+    flex: 0 0 26px;
+    height: 32px;
+}
+#sidebar-tabs > .item.active {
+    color: #FFF;
+    border: 1px solid red;
+    box-shadow: 0 0 6px inset #ff6400;
+}
+#sidebar #sidebar-tabs i.fa-comments::before {
+    content: "";
+}
+
+#sidebar #sidebar-tabs i.fa-fist-raised {
+    content: "";
+    background-image: url("../ui/sidebar/sidebar_button-combat-tracker.png") !important;
+    width: 24px !important;
+    height: 25px !important;
+    display: inline-block !important;
+    background-position:center !important;
+    background-size:cover !important;
+}
+
+#sidebar #sidebar-tabs i.fa-fist-raised::before {
+    content: "";
+}
+
+#sidebar #sidebar-tabs i.fa-map {
+    content: "";
+    background-image: url("../ui/sidebar/sidebar_button-scenes.png") !important;
+    width: 24px !important;
+    height: 25px !important;
+    display: inline-block !important;
+    background-position:center !important;
+    background-size:cover !important;
+}
+
+#sidebar #sidebar-tabs i.fa-map::before {
+    content: "";
+}
+
+#sidebar #sidebar-tabs i.fa-users {
+    content: "";
+    background-image: url("../ui/sidebar/sidebar_button-actors.png") !important;
+    width: 24px !important;
+    height: 25px !important;
+    display: inline-block !important;
+    background-position:center !important;
+    background-size:cover !important;
+}
+
+#sidebar #sidebar-tabs i.fa-users::before {
+    content: "";
+}
+
+#sidebar #sidebar-tabs i.fa-suitcase {
+    content: "";
+    background-image: url("../ui/sidebar/sidebar_button-object.png") !important;
+    width: 24px !important;
+    height: 25px !important;
+    display: inline-block !important;
+    background-position:center !important;
+    background-size:cover !important;
+}
+
+#sidebar #sidebar-tabs i.fa-suitcase::before {
+    content: "";
+}
+
+#sidebar #sidebar-tabs i.fa-book-open {
+    content: "";
+    background-image: url("../ui/sidebar/sidebar_button-journal.png") !important;
+    width: 24px !important;
+    height: 25px !important;
+    display: inline-block !important;
+    background-position:center !important;
+    background-size:cover !important;
+}
+
+#sidebar #sidebar-tabs i.fa-book-open::before {
+    content: "";
+}
+
+#sidebar #sidebar-tabs i.fa-th-list {
+    content: "";
+    background-image: url("../ui/sidebar/sidebar_button-rolltable.png") !important;
+    width: 24px !important;
+    height: 25px !important;
+    display: inline-block !important;
+    background-position:center !important;
+    background-size:cover !important;
+}
+
+#sidebar #sidebar-tabs i.fa-th-list::before {
+    content: "";
+}
+
+#sidebar #sidebar-tabs i.fa-music {
+    content: "";
+    background-image: url("../ui/sidebar/sidebar_button-playlist.png") !important;
+    width: 24px !important;
+    height: 25px !important;
+    display: inline-block !important;
+    background-position:center !important;
+    background-size:cover !important;
+}
+
+#sidebar #sidebar-tabs i.fa-music::before {
+    content: "";
+}
+
+#sidebar #sidebar-tabs i.fa-atlas {
+    content: "";
+    background-image: url("../ui/sidebar/sidebar_button-compendium.png") !important;
+    width: 24px !important;
+    height: 25px !important;
+    display: inline-block !important;
+    background-position:center !important;
+    background-size:cover !important;
+}
+
+#sidebar #sidebar-tabs i.fa-atlas::before {
+    content: "";
+}
+
+#sidebar #sidebar-tabs i.fa-cogs {
+    content: "";
+    background-image: url("../ui/sidebar/sidebar_button-settings.png") !important;
+    width: 24px !important;
+    height: 25px !important;
+    display: inline-block !important;
+    background-position:center !important;
+    background-size:cover !important;
+}
+
+#sidebar #sidebar-tabs i.fa-cogs::before {
+    content: "";
+}
+
+/*************************************************************/
+/*======================= CHAT TAB ==========================*/
+/*************************************************************/
+.message-sender {
+    color: darkred;
+    font-weight: bold;
+    border-bottom-color: darkred;
+    text-decoration: underline;
+}
+#chat-message{
+    background-image: url(../ui/frames/chat-texture.png) !important;
+}
+
+.polyglot-lang-select{
+    color: darkgoldenrod !important;
+}
+.polyglot-lang-select select {
+    font-family: CaslonPro;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: left;
+    position: relative;
+    height: 24px;
+    top: 7px;
+    padding-top: 0px;
+    background: url(../ui/frames/chat-texture.png) repeat !important;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-position: initial;
+    box-shadow: inset 0 0 10px #000000;
+    border-image: url(../ui/frames/chat-controls-border.png) 4 repeat;
+    border-image-width: 4px;
+    border-image-outset: 3px 2px 2px 2px;
+    color: #520000;
+    margin-top: -10px;
+}
+.roll-type-select{
+    color: white !important;
+    text-align: left;
+    margin-bottom: 20px;
+}
+#chat-controls .control-buttons{
+    color: white;
+}
+.fa-dice-d20{
+    color: #e88b49;
+}
+#RTB-button {
+    color: #e88b49;
+}
+.fa-save{
+    color: #e88b49;
+}
+.fa-trash{
+    color: #e88b49;
+}
+
+#sidebar .sidebar-tab #chat-controls div.roll-type-select select {
+    font-family: CaslonPro;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: left;
+    position: relative;
+    height: 24px;
+    top: 7px;
+    padding-top: 3px;
+    background: url(../ui/frames/chat-texture.png) repeat;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-position: initial;
+    box-shadow: inset 0 0 10px #000000;
+    border-image: url(../ui/frames/chat-controls-border.png) 4 repeat;
+    border-image-width: 4px;
+    border-image-outset: 3px 2px 2px 2px;
+    color: #520000;
+}
+
+/*************************************************************/
+/*====================== COMBAT TAB =========================*/
+/*************************************************************/
+.fa-plus{
+    color: #e88b49;
+}
+.fa-users-cog{
+    color: #e88b49;
+}
+.fa-undo{
+    color: #e88b49;
+}
+.fa-users {
+    color: #e88b49;
+}
+.fa-cog{
+    color: #e88b49;
+}
+#combat-controls .combat-control{
+    background-image: url(../ui/buttons/button-red.png);
+    text-align: center;
+    background-position: center !important;
+    background-size: 260px 100%!important;
+    background-repeat: no-repeat;
+}
+
+/*************************************************************/
+/*================= SIDEBAR FOLDER & WIDGETS ================*/
+/*************************************************************/
+.sidebar-tab .directory-header .header-search input {
+    font-family: CaslonPro;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: left;
+    position: relative;
+    height: 24px;
+    top: 7px;
+    padding-top: 3px;
+    background: url(../ui/frames/chat-texture.png) repeat;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-position: initial;
+    box-shadow: inset 0 0 10px #000000;
+    border-image: url(../ui/frames/chat-controls-border.png) 4 repeat;
+    border-image-width: 4px;
+    border-image-outset: 3px 2px 2px 2px;
+    color: #520000;
+
+}
+.header-search{
+    padding-bottom: 8px;
+}
+.fa-search{
+    color: #e88b49;
+}
+.fa-sort-amount-up{
+    color:darkgoldenrod;
+}
+
+.sidebar-tab .directory-footer button{
+    background-image: url(../ui/buttons/button-green.png);
+    text-align: center;
+    background-position: center !important;
+    background-size: 100% 100% !important;
+    background-repeat: no-repeat;
+    padding-top: 5px;
+    margin-top: -2px;
+    border: 0px solid #b5b3a4;
+    color : white;
+    text-shadow: 2px 2px black ;
+}
+
+/*************************************************************/
+/*=============== SIDEBAR FOLDERs AS BUTTONS ================*/
+/*************************************************************/
+.sidebar-tab .folder .folder-header {
+    background-image: url(../ui/buttons/button-grey.png)  !important;
+    text-align: center;
+    background-position: center !important;
+    background-size: 100% 55px!important;
+    background-repeat: no-repeat !important;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    /*background-color: rgba(0,0,0,0) !important;*/
+    color: white;
+    text-shadow: 2px 2px black !important;
+    
+}
+
+.sidebar-tab .directory-list .directory.item h3 {
+    text-shadow: 2px 2px black !important;
+    /*background-color: rgba(0,0,0,0) !important;*/
+    text-align: left;
+}
+
+
+li.folder.collapsed > .folder-header h3 {
+    text-shadow: 2px 2px black !important;
+}
+#sidebar section.sidebar-directory ol.directory-list li.directory-item.folder header {
+    align-items: baseline;
+    text-align: left;
+    padding-left: 40px;
+}
+.subdirectory .folder {
+    border-left: 2px solid #585858 !important;
+}
+
+/*************************************************************/
+/*================== COMPENDIUM HEADERS =====================*/
+/*************************************************************/
+#compendium h3 {
+    text-align: left;
+    position: relative;
+    height: 55px;
+    top: 7px;
+    padding-top: 20px;
+    padding-left: 30px;
+    background: url(../ui/buttons/button-red.png) no-repeat;
+    background-position-x: 0%;
+    background-size: 100% 55px;
+    background-position-y: 0%;
+    background-position: initial;
+    box-shadow: inset 0 0 10px #000000;
+    border-image: url(../ui//frames/chat-controls-border.png) 4 repeat;
+    border-image-width: 4px;
+    border-image-outset: 3px 2px 2px 2px;
+    color: #eeede0;
+    text-shadow: 2px 2px 4px #000000;
+}
+#compendium ol.compendium-list {
+    padding-left: 40px;;
+}
+/* #endregion */
+
+/* #region Remove speaker name background colors in Chat window */
+#chat-log .message .message-header .message-sender {
+    background-color: rgba(0,0,0,0) !important;
+}
+/* #endregion */
+
+/* #region Fix so as not to bigfoot on VTTA's tag system */
+#sidebar section > ol.directory-list > li header > span.vtta-folder-label {
+    text-shadow: 0px 0px 0px black !important;
+}
+/* #endregion */
+
+/* #region Chat log */
+/* differentiate public roll from private or blind.
+ Private uses class whisper, blind uses class blind AND whisper, Self Roll
+ uses class whisper (identical to Private Roll for CSS) */
+#chat-log .message.whisper {
+
+    font-style: italic;
+}
+
+#chat-log .message.whisper .message-header .message-metadata::before{
+    color: #585858;
+    content: " (Private Roll) ";
+    float: left;
+}
+
+
+#chat-log .message.blind .message-header .message-metadata::before{
+    color: #585858;
+    content: " (Blind Roll) " !important;
+    float: left;
+}
+
+/*************************************************************/
+/*================== NAVIGATION BAR =========================*/
+/*************************************************************/
+#navigation #scene-list .scene.view, #navigation #scene-list .scene.context {
+    cursor: default; 
+    color: #FFF;
+    background: url(../ui/sidebar/sidebar_button-background_red.png) repeat;
+    background-origin: padding-box;
+    border-image: url(../ui/sidebar/sidebar_button-footer-button.png) 10 repeat;
+    border-image-width: 4px;
+    border-image-outset: 0px;
+    box-shadow: 0 0 3px #ff6400;
+  }
+  
+  #navigation #nav-toggle {
+    cursor: default; 
+    color: #FFF;
+    background: url(../ui/sidebar/sidebar_button-background_cyan.png) repeat;
+    background-origin: padding-box;
+    border-image: url(../ui/sidebar/sidebar_button-footer-button.png) 10 repeat;
+    border-image-width: 4px;
+    border-image-outset: 0px;
+    font-family: CaslonPro;
+    font-weight: 500;
+    font-size: 14px;
+    padding-top: 3px;
+    height: 36px;
+  }
+  
+  #navigation #scene-list .scene.nav-item {
+    cursor: default; 
+    color: #FFF;
+    background: url(../ui/sidebar/sidebar_button-background_cyan.png) repeat;
+    background-origin: padding-box;
+    border-image: url(../ui/sidebar/sidebar_button-footer-button.png) 10 repeat;
+    border-image-width: 4px;
+    border-image-outset: 0px;
+    font-family: CaslonPro;
+    font-weight: 500;
+    font-size: 14px;
+    padding-top: 2px;
+  }
+  #navigation #scene-list .scene.nav-item.active {
+    background: url(../ui/sidebar/sidebar_button-background_red.png) repeat;
+  }
+    #navigation #scene-list .scene li.scene-player {
+      float: left;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px 0 0;
+      line-height: 12px;
+      padding-top: 1px;
+      text-align: center;
+      color: #000000e8;
+      font-weight: 600;
+      background: #97dff4;
+      border: 1px solid #000;
+      border-radius: 8px;
+      font-family: "Signika", "Palatino Linotype", serif;
+      font-size: 13px;
+      box-shadow: inset 0 0 3px #000000;
+    }
+  
+  /*************************************************************/
+  /*=================== SCENE CONTROLS ========================*/
+  /*************************************************************/
+  #controls .scene-control.active, #controls .control-tool.active, #controls .scene-control:hover, #controls .control-tool:hover {
+  cursor: default; 
+  color: #FFF;
+  background: url(../ui/sidebar/sidebar_button-background_red.png) repeat !important;
+  background-origin: padding-box !important;
+  border-image: url(../ui/sidebar/sidebar_button-footer-button.png) 10 repeat !important;
+  border-image-width: 4px !important;
+  border-image-outset: 0px !important;
+  box-shadow: 0 0 3px #ff6400 !important;
+  }
+  
+  #controls .scene-control, #controls .control-tool {
+  width: 36px !important;
+  height: 36px !important;
+  box-sizing: content-box !important;
+  font-size: 19px !important;
+  line-height: 36px !important;
+  background: rgba(0, 0, 0, 0.5) !important;
+  box-shadow: 0 0 3px #000 !important;
+  margin: 0 0 8px !important;
+  color: #BBB !important;
+  text-align: center !important;
+  border: 1px solid #000 !important;
+  border-radius: 5px !important;
+  cursor: pointer !important; 
+  cursor: default !important; 
+  color: #FFF !important;
+  background: url(../ui/sidebar/sidebar_button-background_cyan.png) repeat !important;
+  background-origin: padding-box !important;
+  border-image: url(../ui/sidebar/sidebar_button-footer-button.png) 10 repeat !important;
+  border-image-width: 4px !important;
+  border-image-outset: 0px !important;
+  }
+
+/*************************************************************/
+/*=================== PLAYERS LIST ==========================*/
+/*************************************************************/
+#players {
+    position: fixed;
+    bottom: 25px;
+    left: 13px;
+    width: 200px;
+    border: 1px solid blue;
+    border-image: url(../ui/frames/players-border.png) 21 repeat;
+    border-image-slice: 23 19 23 19;
+    border-image-width: 23px 19px 23px 19px;
+    border-image-outset: 22px 17px 16px 14px;
+    border-radius: 0px;
+    box-shadow: inset 0 0 10px #000000;
+    background: #000000e8;
+    font-family: CaslonPro;
+    font-weight: 500;
+    font-size: 14px;
+  }
+    #players h3 .fas.fa-users {
+      margin-right: 10px;
+      display: none;
+    }
+  #players ol .player-name {
+    overflow: hidden;
+    white-space: nowrap;
+    word-break: break-all;
+    padding-top: 3px;
+  }
+
+/******************************************************************/
+/*========================= HOTBAR ===============================*/
+/******************************************************************/
+
+  /* ==================== (A) WINDOW FRAMEWORK ================== */
+  #hotbar {
+    font-family: CaslonPro;
+    font-weight: 500;
+    font-size: 14px;
+    width: 600px;
+    height: 60px;
+  }    
+
+  #hotbar #action-bar {
+    flex: 1;
+    height: 100%;
+    justify-content: space-evenly;
+  }
+  #hotbar #action-bar #macro-list {
+    flex: 0 0 510px;
+    height: 100%;
+    list-style: none;
+    margin: 0 0px;
+    padding: 5px 0px 4px 0px;
+    border: none;
+    border-radius: 4px;
+    justify-content: center;
+    background: url(../ui/frames/hotkeybox-macro-list.png);
+    box-shadow: 2px 2px 5px #000000;
+  }
+    #hotbar #action-bar .macro {
+      border-image: url(../ui/frames/hotkeybox.png) 21 repeat;
+      border-image-slice: 6 6 6 6 fill;
+      border-image-width: 6px 6px 6px 6px;
+      border-image-outset: 0px 0px 0px 0px;
+      border-radius: 0px;
+    }   
+      #hotbar .macro .macro-key {
+        position: absolute;
+        top: 2px;
+        right: 2px;
+        padding: 3px 3px;
+        text-shadow: 1px 1px 1px black;
+        color: #f0f0e0;
+        font-weight: normal;
+        background: #000000e0;
+        max-height: 19px;
+        border-radius: 6px;
+        box-shadow: 0px 0px 5px black;
+      }
+  #hotbar .bar-controls {
+    background: #000000de;
+    box-shadow: 0 0 4px black;
+    border-radius: 16px;
+    border: 2px solid #540e0ec2;
+  }
+    #hotbar .bar-controls span.page-number {
+      display: block;
+      font-size: 20px;
+      line-height: 8px;
+      position: relative;
+      top: 4px;
+    }

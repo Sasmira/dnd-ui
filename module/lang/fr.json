@@ -1,0 +1,16 @@
+{
+	"I18N.LANGUAGE": "Français",
+	"I18N.MAINTAINERS": ["Sasmira"],
+
+	"HEXA.COLOR" : "Entrer une couleur hexadécimale (telle que #FFFFFF).",
+    "IC.BG.COLOR": "Couleur de fond dans le chat",
+    "IC.TEXT.COLOR": "Couleur du texte dans le chat",
+	"EMOTE.BG.COLOR": "Couleur de fond des Emotes",
+    "EMOTE.TEXT.COLOR": "Couleur du texte des Emotes",
+    "ROLL.BG.COLOR": "Couleur de fond du jet de dé",
+    "ROLL.TEXT.COLOR": "Couleur du texte du jet de dé",
+    "OTHER.BG.COLOR": "Autre couleur de fond",
+    "OTHER.TEXT.COLOR": "Autre couleur de texte",
+    "DEF.CHAT.PREF": "Préfixe de Chat par défaut",
+    "SPE.CHAT.PREF": "Si renseignée, la chaîne sera préfixée pour tous les messages de chat qui ne sont pas déjà des commandes (comme /emote.)"
+}
