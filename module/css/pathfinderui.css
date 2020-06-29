@@ -357,7 +357,7 @@
 /*=============== SIDEBAR FOLDERs AS BUTTONS ================*/
 /*************************************************************/
 .sidebar-tab .folder .folder-header {
-    background-image: url(../ui/buttons/button-grey.png)  !important;
+    background-image: url(../ui/buttons/button-grey-light.png)  !important;
     text-align: center;
     background-position: center !important;
     background-size: 100% 55px!important;
