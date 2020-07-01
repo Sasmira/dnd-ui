@@ -29,20 +29,20 @@ Hooks.on('diceSoNiceReady', (dice3d) => {
     });
   
     dice3d.addTexture("PFred", {
-      name: "DnD5e Red",
+      name: "DnD5e Red Box",
       composite: "source-over",
-      source: "modules/dnd-ui/ui/dice/redTexture.png"
+      source: "modules/dnd-ui/ui/dice/Texture.png"
     })
     .then(() => {
         dice3d.addColorset({
           name: 'pf',
-          description: "DnD5e Red/Gold",
+          description: "DnD5e Red Box",
           category: "DnD5e",
           texture: 'PFred',
-          edge: '#d9a463',
-          foreground: '#d9a463',
+          background: ["#990000"],
+          foreground: '#e7e6e6',
+          outline: 'black',
           default: true
         },"default");
     });
   });
-  
