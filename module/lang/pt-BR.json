@@ -1,0 +1,15 @@
+{
+  "I18N.MAINTAINERS": [ "Innocenti" ],
+
+  "HEXA.COLOR": "Digite uma cor hexadecimal (ex. #FFFFFF).",
+  "IC.BG.COLOR": "IC Cor de Fundo",
+  "IC.TEXT.COLOR": "IC Cor do Texto",
+  "EMOTE.BG.COLOR": "Cor de fundo do Emote",
+  "EMOTE.TEXT.COLOR": "Cor de texto do Emote",
+  "ROLL.BG.COLOR": "Cor de fundo das Rolagens",
+  "ROLL.TEXT.COLOR": "Cor de texto das Rolagens",
+  "OTHER.BG.COLOR": "Outra Cor de Fundo",
+  "OTHER.TEXT.COLOR": "Outra Cor de Texto",
+  "DEF.CHAT.PREF": "Prefixo padrão do bate-papo",
+  "SPE.CHAT.PREF": "Se especificada, essa sequência será prefixada para todas as mensagens de bate-papo que ainda não são comandos (como / emote.)"
+}
