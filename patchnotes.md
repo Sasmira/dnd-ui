@@ -1,5 +1,8 @@
 # Patchnotes
 
+## v1.1.2
+- Dark Mode compatibility
+
 ## v1.1.1
 - add Português (Brasil) translation, thx Mr @renato.innocenti
 
