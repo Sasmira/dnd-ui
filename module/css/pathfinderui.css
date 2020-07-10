@@ -215,10 +215,11 @@
 }
 #chat-message{
     background-image: url(../ui/frames/chat-texture.png) !important;
+    color: #000000 !important;
 }
 
 .polyglot-lang-select{
-    color: darkgoldenrod !important;
+    color: #e88b49 !important;
 }
 .polyglot-lang-select select {
     font-family: CaslonPro;
@@ -237,7 +238,7 @@
     border-image: url(../ui/frames/chat-controls-border.png) 4 repeat;
     border-image-width: 4px;
     border-image-outset: 3px 2px 2px 2px;
-    color: #520000;
+    color: darkred !important;
     margin-top: -10px;
 }
 .roll-type-select{
@@ -246,7 +247,7 @@
     margin-bottom: 20px;
 }
 #chat-controls .control-buttons{
-    color: white;
+    color: #e88b49;
 }
 .fa-dice-d20{
     color: #e88b49;
@@ -319,7 +320,7 @@
     height: 24px;
     top: 7px;
     padding-top: 3px;
-    background: url(../ui/frames/chat-texture.png) repeat;
+    background: url(../ui/frames/chat-texture.png) !important;
     background-position-x: 0%;
     background-position-y: 0%;
     background-position: initial;
