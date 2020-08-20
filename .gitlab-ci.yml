@@ -12,6 +12,7 @@ build:
   script:
     - zip dnd-ui.zip -r module -x ".*"
   artifacts:
+    expire_in: never
     name: dnd-ui
     when: on_success
     paths:
