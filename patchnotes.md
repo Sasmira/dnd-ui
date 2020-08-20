@@ -1,6 +1,9 @@
 # Patchnotes
 
 ## v1.1.2
+- Fix invalid URL
+
+## v1.1.2
 - Dark Mode compatibility
 
 ## v1.1.1
