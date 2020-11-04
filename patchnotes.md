@@ -1,5 +1,11 @@
 # Patchnotes
 
+## v1.2.0
+- Major Update
+
+## v1.1.4
+- Update for 0.7.5
+
 ## v1.1.3
 - Fix invalid URL
 
