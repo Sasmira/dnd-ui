@@ -10,16 +10,13 @@
     position: fixed;
     right: 5px;
     top: 5px;
-    /* 400 */
-    width: 350px !important;
+    width: 360px !important;
     height: 99vh;
     overflow: hidden;
     margin: 0;
-    /* padding: 30px 0 0 10px; */
     border: 30px solid transparent;
     border-image-source: url(../ui/frames/Chat-box.png);
     border-image-slice: 30 fill;
-    /* display: inline-block !important; */
     background-position: center !important;
     background-size: 300px 100%!important;
     background-repeat: no-repeat;
@@ -31,9 +28,6 @@
 
 #sidebar.collapsed {
     width: 75px !important;
-    /* If you use Progress Clocks, uncomment the following */
-    /* height: 410px !important; */
-    /* If you use Progress Clocks, 375 comment out the following line */
     height: 410px !important;
     padding-left: 5px;
     border: 15px solid transparent;
@@ -55,23 +49,24 @@
 #sidebar #sidebar-tabs i.fa-comments {
     content: "";
     background-image: url("../ui/sidebar/sidebar_button-chat.png") !important;
-    width: 24px !important;
-    height: 25px !important;
+    width: 100% !important;
+    height: 100% !important;
     display: inline-block !important;
     background-position:center !important;
     background-size:cover !important;
 }
+
 #sidebar-tabs {
     height: 64px;
 }
 #sidebar-tabs > .item {
     line-height: 0px;
-    flex: 0 0 26px;
     height: 32px;
 }
 #sidebar-tabs > .item.active {
     color: #FFF;
     border: 1px solid red;
+    
     box-shadow: 0 0 6px inset #ff6400;
 }
 #sidebar #sidebar-tabs i.fa-comments::before {
@@ -81,8 +76,8 @@
 #sidebar #sidebar-tabs i.fa-fist-raised {
     content: "";
     background-image: url("../ui/sidebar/sidebar_button-combat-tracker.png") !important;
-    width: 24px !important;
-    height: 25px !important;
+    width: 100% !important;
+    height: 100% !important;
     display: inline-block !important;
     background-position:center !important;
     background-size:cover !important;
@@ -95,8 +90,8 @@
 #sidebar #sidebar-tabs i.fa-map {
     content: "";
     background-image: url("../ui/sidebar/sidebar_button-scenes.png") !important;
-    width: 24px !important;
-    height: 25px !important;
+    width: 100% !important;
+    height: 100% !important;
     display: inline-block !important;
     background-position:center !important;
     background-size:cover !important;
@@ -109,8 +104,8 @@
 #sidebar #sidebar-tabs i.fa-users {
     content: "";
     background-image: url("../ui/sidebar/sidebar_button-actors.png") !important;
-    width: 24px !important;
-    height: 25px !important;
+    width: 100% !important;
+    height: 100% !important;
     display: inline-block !important;
     background-position:center !important;
     background-size:cover !important;
@@ -123,8 +118,8 @@
 #sidebar #sidebar-tabs i.fa-suitcase {
     content: "";
     background-image: url("../ui/sidebar/sidebar_button-object.png") !important;
-    width: 24px !important;
-    height: 25px !important;
+    width: 100% !important;
+    height: 100% !important;
     display: inline-block !important;
     background-position:center !important;
     background-size:cover !important;
@@ -137,8 +132,8 @@
 #sidebar #sidebar-tabs i.fa-book-open {
     content: "";
     background-image: url("../ui/sidebar/sidebar_button-journal.png") !important;
-    width: 24px !important;
-    height: 25px !important;
+    width: 100% !important;
+    height: 100% !important;
     display: inline-block !important;
     background-position:center !important;
     background-size:cover !important;
@@ -151,8 +146,8 @@
 #sidebar #sidebar-tabs i.fa-th-list {
     content: "";
     background-image: url("../ui/sidebar/sidebar_button-rolltable.png") !important;
-    width: 24px !important;
-    height: 25px !important;
+    width: 100% !important;
+    height: 100% !important;
     display: inline-block !important;
     background-position:center !important;
     background-size:cover !important;
@@ -165,8 +160,8 @@
 #sidebar #sidebar-tabs i.fa-music {
     content: "";
     background-image: url("../ui/sidebar/sidebar_button-playlist.png") !important;
-    width: 24px !important;
-    height: 25px !important;
+    width: 100% !important;
+    height: 100% !important;
     display: inline-block !important;
     background-position:center !important;
     background-size:cover !important;
@@ -179,8 +174,8 @@
 #sidebar #sidebar-tabs i.fa-atlas {
     content: "";
     background-image: url("../ui/sidebar/sidebar_button-compendium.png") !important;
-    width: 24px !important;
-    height: 25px !important;
+    width: 100% !important;
+    height: 100% !important;
     display: inline-block !important;
     background-position:center !important;
     background-size:cover !important;
@@ -193,8 +188,8 @@
 #sidebar #sidebar-tabs i.fa-cogs {
     content: "";
     background-image: url("../ui/sidebar/sidebar_button-settings.png") !important;
-    width: 24px !important;
-    height: 25px !important;
+    width: 100% !important;
+    height: 100% !important;
     display: inline-block !important;
     background-position:center !important;
     background-size:cover !important;
@@ -215,11 +210,10 @@
 }
 #chat-message{
     background-image: url(../ui/frames/chat-texture.png) !important;
-    color: #000000 !important;
 }
 
 .polyglot-lang-select{
-    color: #e88b49 !important;
+    color: darkgoldenrod !important;
 }
 .polyglot-lang-select select {
     font-family: CaslonPro;
@@ -258,9 +252,8 @@
     border-image-width: 4px;
     color: #520000;
 }
-
 #chat-controls .control-buttons{
-    color: #e88b49;
+    color: white;
 }
 .fa-dice-d20{
     color: #e88b49;
@@ -298,6 +291,14 @@
 /*************************************************************/
 /*====================== COMBAT TAB =========================*/
 /*************************************************************/
+#combat-controls .combat-control{
+    background-image: url(../ui/buttons/button-red.png);
+    text-align: center;
+    background-position: center !important;
+    background-size: 260px 100%!important;
+    background-repeat: no-repeat;
+}
+
 .fa-plus{
     color: #e88b49;
 }
@@ -313,17 +314,14 @@
 .fa-cog{
     color: #e88b49;
 }
-#combat-controls .combat-control{
-    background-image: url(../ui/buttons/button-red.png);
-    text-align: center;
-    background-position: center !important;
-    background-size: 260px 100%!important;
-    background-repeat: no-repeat;
-}
 
 /*************************************************************/
 /*================= SIDEBAR FOLDER & WIDGETS ================*/
 /*************************************************************/
+.sidebar-tab .directory-header .header-search {
+    align-items: baseline;
+}
+
 .sidebar-tab .directory-header .header-search input {
     font-family: CaslonPro;
     font-weight: 500;
@@ -333,7 +331,7 @@
     height: 24px;
     top: 7px;
     padding-top: 3px;
-    background: url(../ui/frames/chat-texture.png) !important;
+    background: url(../ui/frames/chat-texture.png) repeat;
     background-position-x: 0%;
     background-position-y: 0%;
     background-position: initial;
@@ -342,13 +340,25 @@
     border-image-width: 4px;
     border-image-outset: 3px 2px 2px 2px;
     color: #520000;
-
 }
+
+.sidebar-tab .directory-header button {
+    background-image: url(../ui/buttons/button-green.png);
+    text-align: center;
+    background-position: center !important;
+    background-size: 100% 100% !important;
+    background-repeat: no-repeat;
+    min-height: 32px;
+    border: 0px solid #b5b3a4;
+    color : white;
+    text-shadow: 2px 2px black ;
+}
+
 .header-search{
     padding-bottom: 8px;
 }
 .fa-search{
-    color: #e88b49;
+    color: darkgoldenrod;
 }
 .fa-sort-amount-up{
     color:darkgoldenrod;
@@ -360,8 +370,7 @@
     background-position: center !important;
     background-size: 100% 100% !important;
     background-repeat: no-repeat;
-    padding-top: 5px;
-    margin-top: -2px;
+    min-height: 32px;
     border: 0px solid #b5b3a4;
     color : white;
     text-shadow: 2px 2px black ;
@@ -372,32 +381,25 @@
 /*************************************************************/
 .sidebar-tab .folder .folder-header {
     background-image: url(../ui/buttons/button-grey-light.png)  !important;
-    text-align: center;
+    text-align: left !important;
     background-position: center !important;
     background-size: 100% 55px!important;
     background-repeat: no-repeat !important;
     padding-top: 15px;
     padding-bottom: 10px;
-    /*background-color: rgba(0,0,0,0) !important;*/
     color: white;
-    text-shadow: 2px 2px black !important;
-    
+    padding-left: 25px;
 }
 
 .sidebar-tab .directory-list .directory.item h3 {
-    text-shadow: 2px 2px black !important;
-    /*background-color: rgba(0,0,0,0) !important;*/
-    text-align: left;
+    text-align: left !important;
+    padding-left: 25px;
 }
 
-
-li.folder.collapsed > .folder-header h3 {
-    text-shadow: 2px 2px black !important;
-}
 #sidebar section.sidebar-directory ol.directory-list li.directory-item.folder header {
     align-items: baseline;
-    text-align: left;
-    padding-left: 40px;
+    text-align: left !important;
+    padding-left: 25px;
 }
 .subdirectory .folder {
     border-left: 2px solid #585858 !important;
@@ -419,16 +421,27 @@ li.folder.collapsed > .folder-header h3 {
     background-position-y: 0%;
     background-position: initial;
     box-shadow: inset 0 0 10px #000000;
-    border-image: url(../ui//frames/chat-controls-border.png) 4 repeat;
+    border-image: url(../ui/frames/chat-controls-border.png) 4 repeat;
     border-image-width: 4px;
     border-image-outset: 3px 2px 2px 2px;
     color: #eeede0;
     text-shadow: 2px 2px 4px #000000;
 }
 #compendium ol.compendium-list {
-    padding-left: 40px;;
+    padding-left: 25px;;
 }
 /* #endregion */
+
+#settings button {
+    background-image: url(../ui/buttons/button-blue.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid black;
+    color: white;
+    font-size: 14px;
+    height: 100%;
+    width: 100%;
+ }
 
 /* #region Remove speaker name background colors in Chat window */
 #chat-log .message .message-header .message-sender {
@@ -447,7 +460,6 @@ li.folder.collapsed > .folder-header h3 {
  Private uses class whisper, blind uses class blind AND whisper, Self Roll
  uses class whisper (identical to Private Roll for CSS) */
 #chat-log .message.whisper {
-
     font-style: italic;
 }
 
