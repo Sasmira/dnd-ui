@@ -487,7 +487,7 @@
     border-image: url(../ui/sidebar/sidebar_button-footer-button.png) 10 repeat;
     border-image-width: 4px;
     border-image-outset: 0px;
-    box-shadow: 0 0 12px red;
+    box-shadow: 0 0 20px red;
   }
   
   #navigation #nav-toggle {
@@ -550,7 +550,7 @@
   border-image: url(../ui/sidebar/sidebar_button-footer-button.png) 10 repeat !important;
   border-image-width: 4px !important;
   border-image-outset: 0px !important;
-  box-shadow: 0 0 8px red !important;
+  box-shadow: 0 0 10px red !important;
   }
   
   #controls .scene-control, #controls .control-tool {
