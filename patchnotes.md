@@ -1,5 +1,8 @@
 # Patchnotes
 
+## v1.2.2
+- Improve Highlight on tools and scene navigation again ...
+
 ## v1.2.1
 - Improve Highlight on tools and scene navigation
 
