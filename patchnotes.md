@@ -1,5 +1,8 @@
 # Patchnotes
 
+## v1.2.3
+- Changed the Dice So Nice! integration to let users pick their preferred dice preset instead of forcing the use of the DnD-UI dice.
+
 ## v1.2.2
 - Improve Highlight on tools and scene navigation again ...
 
