@@ -1,5 +1,9 @@
 # Patchnotes
 
+## v1.3.0
+- Change .png files to .webp for an Ui more light
+- add a background theme
+
 ## v1.2.3
 - Changed the Dice So Nice! integration to let users pick their preferred dice preset instead of forcing the use of the DnD-UI dice.
 

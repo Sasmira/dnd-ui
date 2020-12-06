@@ -1,92 +1,92 @@
 .chat-card-button {
-  cursor:url(../ui/cursors/pointer.png), pointer;
+  cursor:url(../ui/cursors/pointer.webp), pointer;
 }
 
 body {
-  cursor:url(../ui/cursors/normal.png), default; 
+  cursor:url(../ui/cursors/normal.webp), default; 
 }
 
 a{
-  cursor:url(../ui/cursors/pointer.png), pointer; 
+  cursor:url(../ui/cursors/pointer.webp), pointer; 
 }
 
 .draggable{
-  cursor:url(../ui/cursors/drag.png), move; 
+  cursor:url(../ui/cursors/drag.webp), move; 
 }
 
 #hotbar .macro{
-  cursor:url(../ui/cursors/pointer.png), pointer; 
+  cursor:url(../ui/cursors/pointer.webp), pointer; 
 }
 
 #playlists-popout .global-volume::-webkit-slider-thumb,
     #sidebar #playlists .global-volume::-webkit-slider-thumb {
-    cursor:url(../ui/cursors/pointer.png), pointer;
+    cursor:url(../ui/cursors/pointer.webp), pointer;
 }
 #playlists-popout li.playlist:not(:first-of-type) li.sound .sound-volume::-webkit-slider-thumb,
       #sidebar #playlists li.playlist:not(:first-of-type) li.sound .sound-volume::-webkit-slider-thumb {
-        cursor:url(../ui/cursors/pointer.png), pointer; 
+        cursor:url(../ui/cursors/pointer.webp), pointer; 
     }
 
 #sidebar #settings button {
-    cursor:url(../ui/cursors/pointer.png), pointer;
+    cursor:url(../ui/cursors/pointer.webp), pointer;
 }
 
 .app.window-app.sheet.wfrp4e.actor.character-sheet .tab.main.active .main-row .movement.row-section .move-value .auto-calc-toggle {
-    cursor:url(../ui/cursors/pointer.png), pointer;
+    cursor:url(../ui/cursors/pointer.webp), pointer;
 }
 
 .app.window-app.sheet.wfrp4e.actor.npc-sheet  .main-row .movement.row-section .move-value .auto-calc-toggle {
-    cursor:url(../ui/cursors/pointer.png), pointer;
+    cursor:url(../ui/cursors/pointer.webp), pointer;
 }
 
 .app.window-app.sheet.wfrp4e.actor.creature-sheet  .main-row .movement.row-section .move-value .auto-calc-toggle {
-    cursor:url(../ui/cursors/pointer.png), pointer;
+    cursor:url(../ui/cursors/pointer.webp), pointer;
 }
 
 #navigation #scene-list .scene.view, #navigation #scene-list .scene.context {
-    cursor:url(../ui/cursors/normal.png), default; 
+    cursor:url(../ui/cursors/normal.webp), default; 
 }
 
 #navigation #nav-toggle {
-    cursor:url(../ui/cursors/normal.png), default; 
+    cursor:url(../ui/cursors/normal.webp), default; 
 }
 
 #navigation #scene-list .scene.nav-item {
-    cursor:url(../ui/cursors/normal.png), default; 
+    cursor:url(../ui/cursors/normal.webp), default; 
 }
 
 #controls .scene-control.active, #controls .control-tool.active, #controls .scene-control:hover, #controls .control-tool:hover {
-    cursor:url(../ui/cursors/normal.png), default; 
+    cursor:url(../ui/cursors/normal.webp), default; 
 }
 
 #controls .scene-control, #controls .control-tool {
-    cursor:url(../ui/cursors/pointer.png), pointer !important; 
-    cursor:url(../ui/cursors/normal.png), default !important; 
+    cursor:url(../ui/cursors/pointer.webp), pointer !important; 
+    cursor:url(../ui/cursors/normal.webp), default !important; 
 }
 
 .app.window-app .form-group input[type="range"]::-webkit-slider-thumb {
-    cursor:url(../ui/cursors/pointer.png), pointer;
+    cursor:url(../ui/cursors/pointer.webp), pointer;
 }
 
 .token-sheet .tab[data-tab="image"] input[type="range"]::-webkit-slider-thumb {
-    cursor:url(../ui/cursors/pointer.png), pointer;
+    cursor:url(../ui/cursors/pointer.webp), pointer;
 }
 
 #drawing-config .tab[data-tab="image"] input[type="range"]::-webkit-slider-thumb {
-    cursor:url(../ui/cursors/pointer.png), pointer;
+    cursor:url(../ui/cursors/pointer.webp), pointer;
 }
 
 .metacurrency-value {
-    cursor:url(../ui/cursors/pointer.png), pointer;
+    cursor:url(../ui/cursors/pointer.webp), pointer;
 }
 
 .overcast-button,
 .chargen-button {
-    cursor:url(../ui/cursors/pointer.png), pointer;
+    cursor:url(../ui/cursors/pointer.webp), pointer;
 }
 
 #effects-config .flex2::-webkit-slider-thumb {
-    cursor:url(../ui/cursors/pointer.png), pointer;
+    cursor:url(../ui/cursors/pointer.webp), pointer;
 }
 
 #client-settings .window-content form .form-group > label,
@@ -95,12 +95,12 @@ a{
 .app.window-app .form-group label,
 #sidebar .sidebar-tab #chat-controls div.roll-type-select select,
 #sidebar .sidebar-tab #chat-controls div.roll-type-select i.fas {
-    cursor:url(../ui/cursors/normal.png), default; 
+    cursor:url(../ui/cursors/normal.webp), default; 
 }
 
 #client-settings section.content .submenu > button,
 #client-settings .window-content button label,
 form .form-group .form-fields button,
 form button {
-    cursor:url(../ui/cursors/pointer.png), pointer;
+    cursor:url(../ui/cursors/pointer.webp), pointer;
 }

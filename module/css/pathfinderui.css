@@ -1,4 +1,12 @@
 /*************************************************************/
+/*=================== Image Background ======================*/
+/*************************************************************/
+body {
+    background: url(../dnd_background.webp) no-repeat center;
+    background-size: cover;
+   }
+ 
+/*************************************************************/
 /*======================= SIDEBAR ===========================*/
 /*************************************************************/
 
@@ -15,7 +23,7 @@
     overflow: hidden;
     margin: 0;
     border: 30px solid transparent;
-    border-image-source: url(../ui/frames/Chat-box.png);
+    border-image-source: url(../ui/frames/Chat-box.webp);
     border-image-slice: 30 fill;
     background-position: center !important;
     background-size: 300px 100%!important;
@@ -31,7 +39,7 @@
     height: 410px !important;
     padding-left: 5px;
     border: 15px solid transparent;
-    border-image-source: url(../ui/frames/Chat-box.png);
+    border-image-source: url(../ui/frames/Chat-box.webp);
     border-image-slice: 35 fill;
     background-position: center !important;
     background-size: 100% 100%!important;
@@ -48,7 +56,7 @@
 
 #sidebar #sidebar-tabs i.fa-comments {
     content: "";
-    background-image: url("../ui/sidebar/sidebar_button-chat.png") !important;
+    background-image: url("../ui/sidebar/sidebar_button-chat.webp") !important;
     width: 100% !important;
     height: 100% !important;
     display: inline-block !important;
@@ -75,7 +83,7 @@
 
 #sidebar #sidebar-tabs i.fa-fist-raised {
     content: "";
-    background-image: url("../ui/sidebar/sidebar_button-combat-tracker.png") !important;
+    background-image: url("../ui/sidebar/sidebar_button-combat-tracker.webp") !important;
     width: 100% !important;
     height: 100% !important;
     display: inline-block !important;
@@ -89,7 +97,7 @@
 
 #sidebar #sidebar-tabs i.fa-map {
     content: "";
-    background-image: url("../ui/sidebar/sidebar_button-scenes.png") !important;
+    background-image: url("../ui/sidebar/sidebar_button-scenes.webp") !important;
     width: 100% !important;
     height: 100% !important;
     display: inline-block !important;
@@ -103,7 +111,7 @@
 
 #sidebar #sidebar-tabs i.fa-users {
     content: "";
-    background-image: url("../ui/sidebar/sidebar_button-actors.png") !important;
+    background-image: url("../ui/sidebar/sidebar_button-actors.webp") !important;
     width: 100% !important;
     height: 100% !important;
     display: inline-block !important;
@@ -117,7 +125,7 @@
 
 #sidebar #sidebar-tabs i.fa-suitcase {
     content: "";
-    background-image: url("../ui/sidebar/sidebar_button-object.png") !important;
+    background-image: url("../ui/sidebar/sidebar_button-object.webp") !important;
     width: 100% !important;
     height: 100% !important;
     display: inline-block !important;
@@ -131,7 +139,7 @@
 
 #sidebar #sidebar-tabs i.fa-book-open {
     content: "";
-    background-image: url("../ui/sidebar/sidebar_button-journal.png") !important;
+    background-image: url("../ui/sidebar/sidebar_button-journal.webp") !important;
     width: 100% !important;
     height: 100% !important;
     display: inline-block !important;
@@ -145,7 +153,7 @@
 
 #sidebar #sidebar-tabs i.fa-th-list {
     content: "";
-    background-image: url("../ui/sidebar/sidebar_button-rolltable.png") !important;
+    background-image: url("../ui/sidebar/sidebar_button-rolltable.webp") !important;
     width: 100% !important;
     height: 100% !important;
     display: inline-block !important;
@@ -159,7 +167,7 @@
 
 #sidebar #sidebar-tabs i.fa-music {
     content: "";
-    background-image: url("../ui/sidebar/sidebar_button-playlist.png") !important;
+    background-image: url("../ui/sidebar/sidebar_button-playlist.webp") !important;
     width: 100% !important;
     height: 100% !important;
     display: inline-block !important;
@@ -173,7 +181,7 @@
 
 #sidebar #sidebar-tabs i.fa-atlas {
     content: "";
-    background-image: url("../ui/sidebar/sidebar_button-compendium.png") !important;
+    background-image: url("../ui/sidebar/sidebar_button-compendium.webp") !important;
     width: 100% !important;
     height: 100% !important;
     display: inline-block !important;
@@ -187,7 +195,7 @@
 
 #sidebar #sidebar-tabs i.fa-cogs {
     content: "";
-    background-image: url("../ui/sidebar/sidebar_button-settings.png") !important;
+    background-image: url("../ui/sidebar/sidebar_button-settings.webp") !important;
     width: 100% !important;
     height: 100% !important;
     display: inline-block !important;
@@ -209,7 +217,7 @@
     text-decoration: underline;
 }
 #chat-message{
-    background-image: url(../ui/frames/chat-texture.png) !important;
+    background-image: url(../ui/frames/chat-texture.webp) !important;
 }
 
 .polyglot-lang-select{
@@ -224,12 +232,12 @@
     height: 24px;
     top: 10px;
     padding-top: 0px;
-    background: url(../ui/frames/chat-texture.png) repeat !important;
+    background: url(../ui/frames/chat-texture.webp) repeat !important;
     background-position-x: 0%;
     background-position-y: 0%;
     background-position: initial;
     box-shadow: inset 0 0 10px #000000;
-    border-image: url(../ui/frames/chat-controls-border.png) 4 repeat;
+    border-image: url(../ui/frames/chat-controls-border.webp) 4 repeat;
     border-image-width: 4px;
     color: #520000;
     margin-top: -10px;
@@ -243,12 +251,12 @@
     height: 24px;
     top: 1px;
     padding-top: 0px;
-    background: url(../ui/frames/chat-texture.png) repeat !important;
+    background: url(../ui/frames/chat-texture.webp) repeat !important;
     background-position-x: 0%;
     background-position-y: 0%;
     background-position: initial;
     box-shadow: inset 0 0 10px #000000;
-    border-image: url(../ui/frames/chat-controls-border.png) 4 repeat;
+    border-image: url(../ui/frames/chat-controls-border.webp) 4 repeat;
     border-image-width: 4px;
     color: #520000;
 }
@@ -277,12 +285,12 @@
     height: 24px;
     top: 7px;
     padding-top: 3px;
-    background: url(../ui/frames/chat-texture.png) repeat;
+    background: url(../ui/frames/chat-texture.webp) repeat;
     background-position-x: 0%;
     background-position-y: 0%;
     background-position: initial;
     box-shadow: inset 0 0 10px #000000;
-    border-image: url(../ui/frames/chat-controls-border.png) 4 repeat;
+    border-image: url(../ui/frames/chat-controls-border.webp) 4 repeat;
     border-image-width: 4px;
     border-image-outset: 3px 2px 2px 2px;
     color: #520000;
@@ -292,7 +300,7 @@
 /*====================== COMBAT TAB =========================*/
 /*************************************************************/
 #combat-controls .combat-control{
-    background-image: url(../ui/buttons/button-red.png);
+    background-image: url(../ui/buttons/button-red.webp);
     text-align: center;
     background-position: center !important;
     background-size: 260px 100%!important;
@@ -331,19 +339,19 @@
     height: 24px;
     top: 7px;
     padding-top: 3px;
-    background: url(../ui/frames/chat-texture.png) repeat;
+    background: url(../ui/frames/chat-texture.webp) repeat;
     background-position-x: 0%;
     background-position-y: 0%;
     background-position: initial;
     box-shadow: inset 0 0 10px #000000;
-    border-image: url(../ui/frames/chat-controls-border.png) 4 repeat;
+    border-image: url(../ui/frames/chat-controls-border.webp) 4 repeat;
     border-image-width: 4px;
     border-image-outset: 3px 2px 2px 2px;
     color: #520000;
 }
 
 .sidebar-tab .directory-header button {
-    background-image: url(../ui/buttons/button-green.png);
+    background-image: url(../ui/buttons/button-green.webp);
     text-align: center;
     background-position: center !important;
     background-size: 100% 100% !important;
@@ -365,7 +373,7 @@
 }
 
 .sidebar-tab .directory-footer button{
-    background-image: url(../ui/buttons/button-green.png);
+    background-image: url(../ui/buttons/button-green.webp);
     text-align: center;
     background-position: center !important;
     background-size: 100% 100% !important;
@@ -380,7 +388,7 @@
 /*=============== SIDEBAR FOLDERs AS BUTTONS ================*/
 /*************************************************************/
 .sidebar-tab .folder .folder-header {
-    background-image: url(../ui/buttons/button-grey-light.png)  !important;
+    background-image: url(../ui/buttons/button-grey-light.webp)  !important;
     text-align: left !important;
     background-position: center !important;
     background-size: 100% 55px!important;
@@ -415,13 +423,13 @@
     top: 7px;
     padding-top: 20px;
     padding-left: 30px;
-    background: url(../ui/buttons/button-red.png) no-repeat;
+    background: url(../ui/buttons/button-red.webp) no-repeat;
     background-position-x: 0%;
     background-size: 100% 55px;
     background-position-y: 0%;
     background-position: initial;
     box-shadow: inset 0 0 10px #000000;
-    border-image: url(../ui/frames/chat-controls-border.png) 4 repeat;
+    border-image: url(../ui/frames/chat-controls-border.webp) 4 repeat;
     border-image-width: 4px;
     border-image-outset: 3px 2px 2px 2px;
     color: #eeede0;
@@ -433,7 +441,7 @@
 /* #endregion */
 
 #settings button {
-    background-image: url(../ui/buttons/button-blue.png);
+    background-image: url(../ui/buttons/button-blue.webp);
     background-size: cover;
     background-repeat: no-repeat;
     border: 1px solid black;
@@ -482,9 +490,9 @@
 #navigation #scene-list .scene.view, #navigation #scene-list .scene.context {
     cursor: default; 
     color: #FFF;
-    background: url(../ui/sidebar/sidebar_button-background_red.png) repeat;
+    background: url(../ui/sidebar/sidebar_button-background_red.webp) repeat;
     background-origin: padding-box;
-    border-image: url(../ui/sidebar/sidebar_button-footer-button.png) 10 repeat;
+    border-image: url(../ui/sidebar/sidebar_button-footer-button.webp) 10 repeat;
     border-image-width: 4px;
     border-image-outset: 0px;
     box-shadow: 0 0 20px red;
@@ -493,9 +501,9 @@
   #navigation #nav-toggle {
     cursor: default; 
     color: #FFF;
-    background: url(../ui/sidebar/sidebar_button-background_cyan.png) repeat;
+    background: url(../ui/sidebar/sidebar_button-background_cyan.webp) repeat;
     background-origin: padding-box;
-    border-image: url(../ui/sidebar/sidebar_button-footer-button.png) 10 repeat;
+    border-image: url(../ui/sidebar/sidebar_button-footer-button.webp) 10 repeat;
     border-image-width: 4px;
     border-image-outset: 0px;
     font-family: CaslonPro;
@@ -508,9 +516,9 @@
   #navigation #scene-list .scene.nav-item {
     cursor: default; 
     color: #FFF;
-    background: url(../ui/sidebar/sidebar_button-background_cyan.png) repeat;
+    background: url(../ui/sidebar/sidebar_button-background_cyan.webp) repeat;
     background-origin: padding-box;
-    border-image: url(../ui/sidebar/sidebar_button-footer-button.png) 10 repeat;
+    border-image: url(../ui/sidebar/sidebar_button-footer-button.webp) 10 repeat;
     border-image-width: 4px;
     border-image-outset: 0px;
     font-family: CaslonPro;
@@ -519,7 +527,7 @@
     padding-top: 2px;
   }
   #navigation #scene-list .scene.nav-item.active {
-    background: url(../ui/sidebar/sidebar_button-background_red.png) repeat;
+    background: url(../ui/sidebar/sidebar_button-background_red.webp) repeat;
   }
     #navigation #scene-list .scene li.scene-player {
       float: left;
@@ -545,9 +553,9 @@
   #controls .scene-control.active, #controls .control-tool.active, #controls .scene-control:hover, #controls .control-tool:hover {
   cursor: default; 
   color: #FFF;
-  background: url(../ui/sidebar/sidebar_button-background_red.png) repeat !important;
+  background: url(../ui/sidebar/sidebar_button-background_red.webp) repeat !important;
   background-origin: padding-box !important;
-  border-image: url(../ui/sidebar/sidebar_button-footer-button.png) 10 repeat !important;
+  border-image: url(../ui/sidebar/sidebar_button-footer-button.webp) 10 repeat !important;
   border-image-width: 4px !important;
   border-image-outset: 0px !important;
   box-shadow: 0 0 10px red !important;
@@ -569,9 +577,9 @@
   cursor: pointer !important; 
   cursor: default !important; 
   color: #FFF !important;
-  background: url(../ui/sidebar/sidebar_button-background_cyan.png) repeat !important;
+  background: url(../ui/sidebar/sidebar_button-background_cyan.webp) repeat !important;
   background-origin: padding-box !important;
-  border-image: url(../ui/sidebar/sidebar_button-footer-button.png) 10 repeat !important;
+  border-image: url(../ui/sidebar/sidebar_button-footer-button.webp) 10 repeat !important;
   border-image-width: 4px !important;
   border-image-outset: 0px !important;
   }
@@ -585,7 +593,7 @@
     left: 13px;
     width: 200px;
     border: 1px solid blue;
-    border-image: url(../ui/frames/players-border.png) 21 repeat;
+    border-image: url(../ui/frames/players-border.webp) 21 repeat;
     border-image-slice: 23 19 23 19;
     border-image-width: 23px 19px 23px 19px;
     border-image-outset: 22px 17px 16px 14px;
@@ -634,11 +642,11 @@
     border: none;
     border-radius: 4px;
     justify-content: center;
-    background: url(../ui/frames/hotkeybox-macro-list.png);
+    background: url(../ui/frames/hotkeybox-macro-list.webp);
     box-shadow: 2px 2px 5px #000000;
   }
     #hotbar #action-bar .macro {
-      border-image: url(../ui/frames/hotkeybox.png) 21 repeat;
+      border-image: url(../ui/frames/hotkeybox.webp) 21 repeat;
       border-image-slice: 6 6 6 6 fill;
       border-image-width: 6px 6px 6px 6px;
       border-image-outset: 0px 0px 0px 0px;
