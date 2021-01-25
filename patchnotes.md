@@ -1,5 +1,8 @@
 # Patchnotes
 
+## v1.3.1
+- New Cursors, background and Chatbox
+
 ## v1.3.0
 - Change .png files to .webp for an Ui more light
 - add a background theme
