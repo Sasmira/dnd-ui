@@ -1,7 +1,8 @@
 # Patchnotes
 
-## v1.3.1
+## v1.4.0
 - New Cursors, background and Chatbox
+- all images and logo with a copyright have been changed
 
 ## v1.3.0
 - Change .png files to .webp for an Ui more light
