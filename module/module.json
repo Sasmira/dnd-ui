@@ -2,7 +2,7 @@
   "name": "dnd-ui",
   "title": "DnD5e Ui",
   "description": "Theme for DnD5e. <p>*** Join the official Discord server: <a href='https://discord.gg/foundryvtt'> Official Discord</a></p><p>*** Rejoignez la communauté Francophone: <a href='https://discord.gg/pPSDNJk'>Francophone Discord</a></p>",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "minimumCoreVersion": "0.7.9",
   "compatibleCoreVersion": "1.0.0",
   "author": "Sasmira",
@@ -34,5 +34,5 @@
   "packs": [],
   "url": "https://gitlab.com/sasmira/dnd-ui",
   "manifest": "https://gitlab.com/sasmira/dnd-ui/-/raw/master/module/module.json",
-  "download": "https://gitlab.com/sasmira/dnd-ui/-/jobs/artifacts/v1.4.0/raw/dnd-ui.zip?job=build"
+  "download": "https://gitlab.com/sasmira/dnd-ui/-/jobs/artifacts/v1.4.1/raw/dnd-ui.zip?job=build"
 }

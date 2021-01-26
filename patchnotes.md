@@ -1,5 +1,8 @@
 # Patchnotes
 
+## v1.4.1
+- rollback on old cursors
+
 ## v1.4.0
 - New Cursors, background and Chatbox
 - all images and logo with a copyright have been changed
