@@ -1,5 +1,8 @@
 # Patchnotes
 
+## v1.4.2
+- Background has been removed
+
 ## v1.4.1
 - rollback on old cursors
 
