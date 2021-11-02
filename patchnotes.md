@@ -1,5 +1,12 @@
 # Patchnotes
 
+## v1.5.0
+- Support Combat Carousel like Pathfinder Ui v3
+- New Background theme added
+- New Dicefinder like Pathfinder Ui v3
+- New Game Paused
+- Fix somes minors bugs
+
 ## v1.4.2
 - Background has been removed
 

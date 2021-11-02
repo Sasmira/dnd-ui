@@ -1,3 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Kurale&display=swap');
+@import 'carousel.css';
+
+/*************************************************************/
+/*============ Background/Pause img / Logo ==================*/
+/*************************************************************/
+  
+body {
+    background: url(../dndui-background.webp) no-repeat center;
+    background-size: cover;
+}
+
+#pause img {
+	box-sizing: border-box;
+	width: 128px;
+	height: 128px;
+	padding-left: 128px;
+	
+	background-image: url("../ui/other/paused-pfrpg.webp");
+	animation: rotation 20s infinite linear;	
+}
+
 /*************************************************************/
 /*======================= SIDEBAR ===========================*/
 /*************************************************************/
@@ -376,28 +398,6 @@
 /*************************************************************/
 /*================== COMPENDIUM HEADERS =====================*/
 /*************************************************************/
-#compendium h3 {
-    text-align: left;
-    position: relative;
-    height: 55px;
-    top: 7px;
-    padding-top: 20px;
-    padding-left: 30px;
-    background: url(../ui/buttons/button-red.webp) no-repeat;
-    background-position-x: 0%;
-    background-size: 100% 55px;
-    background-position-y: 0%;
-    background-position: initial;
-    box-shadow: inset 0 0 10px #000000;
-    border-image: url(../ui/frames/chat-controls-border.webp) 4 repeat;
-    border-image-width: 4px;
-    border-image-outset: 3px 2px 2px 2px;
-    color: #eeede0;
-    text-shadow: 2px 2px 4px #000000;
-}
-#compendium ol.compendium-list {
-    padding-left: 25px;;
-}
 /* #endregion */
 
 #settings button {
@@ -637,3 +637,60 @@
       position: relative;
       top: 4px;
     }
+/* CONTROLS */
+
+#controls {
+    top: 70px;
+}
+
+body.compact-mode > ol.app.control-tools {
+    top: -6px!important;
+}
+
+#controls .control-tools {
+    left: 60px;
+}
+
+#controls .scene-control, #controls .control-tool {
+    margin: 0 0 4px;
+}
+
+#controls .scene-control.active, #controls .control-tool.active, #controls .scene-control:hover, #controls .control-tool:hover {
+    color: #d6d3c1;
+}
+
+#controls .scene-control, #controls .control-tool {
+    border: none;
+    box-shadow: none;
+    background: none;
+    color: #837360;
+    padding: 5px;
+}
+
+#controls .scene-control, #controls .control-tool {
+    margin: 0 0 4px;
+}
+
+#controls .scene-control i {
+    position: relative;
+}
+
+#controls .scene-control > i::after, #controls li[data-control="combat-carousel"]::after {
+    position: absolute;
+    content: " ";
+    width: 53px;
+    height: 53px;
+    left: -12px;
+    top: -12px;
+    z-index: -2;
+    opacity: 0.88;
+}
+
+#controls li[data-control="combat-carousel"] {
+    position: relative;
+}
+
+#controls li[data-control="combat-carousel"]::after {
+    left: 0px;
+    top: 0px;
+}

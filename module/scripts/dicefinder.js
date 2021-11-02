@@ -1,5 +1,5 @@
 Hooks.on('diceSoNiceReady', (dice3d) => {
-    dice3d.addSystem({id: "PF", name: "DnD5e"}, "default");
+    dice3d.addSystem({id: "PF", name: "Dicefinder"}, "default");
   
     dice3d.addDicePreset({
       type: "d20",
@@ -23,26 +23,28 @@ Hooks.on('diceSoNiceReady', (dice3d) => {
         "17",
         "18",
         "19",
-        "modules/dnd-ui/ui/dice/nat20.png"
+        "modules/dnd-ui/ui/dice/nat20.webp"
       ],
       system: "PF"
     });
-  
+
     dice3d.addTexture("PFred", {
-      name: "DnD5e Red Box",
+      name: "Dicefinder",
       composite: "source-over",
-      source: "modules/dnd-ui/ui/dice/Texture.png"
+      source: "modules/dnd-ui/ui/dice/texture.webp"
     })
     .then(() => {
         dice3d.addColorset({
           name: 'pf',
-          description: "DnD5e Red Box",
+          description: "Dicefinder",
           category: "DnD5e",
           texture: 'PFred',
-          background: ["#990000"],
-          foreground: '#e7e6e6',
-          outline: 'black',
+          material: "chrome",
+          foreground: "#c98e45",
+          outline: 'none',
+          edge: "#c98e45",
           default: true
         },"default");
     });
   });
+  

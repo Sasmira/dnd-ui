@@ -2,17 +2,23 @@
   "name": "dnd-ui",
   "title": "DnD5e Ui",
   "description": "Theme for DnD5e. <p>*** Join the official Discord server: <a href='https://discord.gg/foundryvtt'> Official Discord</a></p><p>*** Rejoignez la communauté Francophone: <a href='https://discord.gg/pPSDNJk'>Francophone Discord</a></p>",
-  "version": "1.4.2",
-  "minimumCoreVersion": "0.7.9",
-  "compatibleCoreVersion": "1.0.0",
   "author": "Sasmira",
-  "systems": ["dnd5e"],
-  "esmodules": [ "scripts/dicefinder.js"],
-  "styles": [ 
-    "css/pathfinderui.css",
+  "authors": [],
+  "url": "https://gitlab.com/sasmira/dnd-ui",
+  "flags": {},
+  "version": "1.5.0",
+  "minimumCoreVersion": "0.8.9",
+  "compatibleCoreVersion": "1.0.0",
+  "scripts": [
+    "scripts/rpg-ui.js",
+    "scripts/pathfinder-chat-color.js"
+  ],
+  "esmodules": [
+    "scripts/dicefinder.js"
+  ],
+  "styles": [
     "css/cursor.css"
   ],
-  "scripts": [ "scripts/pathfinder-chat-color.js" ],
   "languages": [
     {
       "lang": "en",
@@ -30,9 +36,19 @@
       "path": "lang/pt-BR.json"
     }
   ],
-
   "packs": [],
-  "url": "https://gitlab.com/sasmira/dnd-ui",
+  "systems": ["dnd5e"],
+  "dependencies": [
+    {
+		  "name": "combat-carousel",
+		  "type": "module",
+		  "manifest": "https://github.com/death-save/combat-carousel/releases/latest/download/module.json"
+		}
+  ],
+  "socket": false,
   "manifest": "https://gitlab.com/sasmira/dnd-ui/-/raw/master/module/module.json",
-  "download": "https://gitlab.com/sasmira/dnd-ui/-/jobs/artifacts/v1.4.2/raw/dnd-ui.zip?job=build"
+  "download": "https://gitlab.com/sasmira/dnd-ui/-/jobs/artifacts/v1.5.0/raw/dnd-ui.zip?job=build",
+  "protected": false,
+  "coreTranslation": false,
+  "library": false
 }
