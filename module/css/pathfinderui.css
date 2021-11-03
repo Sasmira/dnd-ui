@@ -543,7 +543,27 @@ body {
   border-image-outset: 0px !important;
   }
 
-/*************************************************************/
+  #controls .scene-control > i::after, #controls li[data-control="combat-carousel"]::after {
+    position: absolute;
+    content: " ";
+    width: 53px;
+    height: 53px;
+    left: -12px;
+    top: -12px;
+    z-index: -2;
+    opacity: 0.88;
+}
+
+#controls li[data-control="combat-carousel"] {
+    position: relative;
+}
+
+#controls li[data-control="combat-carousel"]::after {
+    left: 0px;
+    top: 0px;
+}
+
+ /*************************************************************/
 /*=================== PLAYERS LIST ==========================*/
 /*************************************************************/
 #players {
@@ -637,60 +657,3 @@ body {
       position: relative;
       top: 4px;
     }
-/* CONTROLS */
-
-#controls {
-    top: 70px;
-}
-
-body.compact-mode > ol.app.control-tools {
-    top: -6px!important;
-}
-
-#controls .control-tools {
-    left: 60px;
-}
-
-#controls .scene-control, #controls .control-tool {
-    margin: 0 0 4px;
-}
-
-#controls .scene-control.active, #controls .control-tool.active, #controls .scene-control:hover, #controls .control-tool:hover {
-    color: #d6d3c1;
-}
-
-#controls .scene-control, #controls .control-tool {
-    border: none;
-    box-shadow: none;
-    background: none;
-    color: #837360;
-    padding: 5px;
-}
-
-#controls .scene-control, #controls .control-tool {
-    margin: 0 0 4px;
-}
-
-#controls .scene-control i {
-    position: relative;
-}
-
-#controls .scene-control > i::after, #controls li[data-control="combat-carousel"]::after {
-    position: absolute;
-    content: " ";
-    width: 53px;
-    height: 53px;
-    left: -12px;
-    top: -12px;
-    z-index: -2;
-    opacity: 0.88;
-}
-
-#controls li[data-control="combat-carousel"] {
-    position: relative;
-}
-
-#controls li[data-control="combat-carousel"]::after {
-    left: 0px;
-    top: 0px;
-}

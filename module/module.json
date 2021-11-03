@@ -6,7 +6,7 @@
   "authors": [],
   "url": "https://gitlab.com/sasmira/dnd-ui",
   "flags": {},
-  "version": "1.5.0",
+  "version": "1.5.1",
   "minimumCoreVersion": "0.8.9",
   "compatibleCoreVersion": "1.0.0",
   "scripts": [
@@ -37,17 +37,19 @@
     }
   ],
   "packs": [],
-  "systems": ["dnd5e"],
+  "system": [
+    "dnd5e"
+  ],
   "dependencies": [
     {
-		  "name": "combat-carousel",
-		  "type": "module",
-		  "manifest": "https://github.com/death-save/combat-carousel/releases/latest/download/module.json"
-		}
+      "name": "combat-carousel",
+      "type": "module",
+      "manifest": "https://github.com/death-save/combat-carousel/releases/latest/download/module.json"
+    }
   ],
   "socket": false,
   "manifest": "https://gitlab.com/sasmira/dnd-ui/-/raw/master/module/module.json",
-  "download": "https://gitlab.com/sasmira/dnd-ui/-/jobs/artifacts/v1.5.0/raw/dnd-ui.zip?job=build",
+  "download": "https://gitlab.com/sasmira/dnd-ui/-/jobs/artifacts/v1.5.1/raw/dnd-ui.zip?job=build",
   "protected": false,
   "coreTranslation": false,
   "library": false

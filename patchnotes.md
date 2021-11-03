@@ -1,5 +1,8 @@
 # Patchnotes
 
+## v1.5.1
+- fix a scaling error with minimal ui
+
 ## v1.5.0
 - Support Combat Carousel like Pathfinder Ui v3
 - New Background theme added
