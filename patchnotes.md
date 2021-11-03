@@ -1,5 +1,8 @@
 # Patchnotes
 
+## v1.5.2
+- Alternative Pause Icon fix
+
 ## v1.5.1
 - fix a scaling error with minimal ui
 
