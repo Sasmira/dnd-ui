@@ -1,5 +1,8 @@
 # Patchnotes
 
+## v1.5.3
+- clean js
+
 ## v1.5.2
 - Alternative Pause Icon fix
 

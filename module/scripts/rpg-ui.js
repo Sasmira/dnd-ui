@@ -15,16 +15,6 @@ Hooks.on('init', () => {
 	if (!game.settings.get('dnd-ui', 'disableAllStyles')) { rpgUIAddMainCss() }
 });
 
-Hooks.on('getSceneNavigationContext', () => {
-	if (!game.settings.get('dnd-ui', 'navigationVerticalToggle')) {
-		navigation = document.querySelector("nav.app > ol#scene-list");
-		navigation.classList.add("vertical")
-	}
-	if (game.settings.get('dnd-ui', 'compactModeToggle')) {
-		addClassByQuerySelector("compact-mode", "body")
-	}
-});
-
 Hooks.on('renderCombatCarousel', () => {
 	let carouselSize = game.settings.get('combat-carousel', 'carouselSize')
 	if (carouselSize !== "") {
