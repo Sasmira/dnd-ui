@@ -6,7 +6,7 @@
 /*************************************************************/
   
 body {
-    background: url(../dndui-background.webp) no-repeat center;
+    background-image: url(../dndui-background.webp);
     background-size: cover;
 }
 
@@ -68,7 +68,7 @@ body {
 
 #sidebar #sidebar-tabs i.fa-comments {
     content: "";
-    background-image: url("../ui/sidebar/sidebar_button-chat.webp") !important;
+    background-image: url("../ui/sidebar/sidebar-button-chat.webp") !important;
     width: 100% !important;
     height: 100% !important;
     display: inline-block !important;
@@ -97,7 +97,7 @@ body {
 
 #sidebar #sidebar-tabs i.fa-fist-raised {
     content: "";
-    background-image: url("../ui/sidebar/sidebar_button-combat-tracker.webp") !important;
+    background-image: url("../ui/sidebar/sidebar-button-combat.webp") !important;
     width: 100% !important;
     height: 100% !important;
     display: inline-block !important;
@@ -112,7 +112,7 @@ body {
 
 #sidebar #sidebar-tabs i.fa-map {
     content: "";
-    background-image: url("../ui/sidebar/sidebar_button-scenes.webp") !important;
+    background-image: url("../ui/sidebar/sidebar-button-scenes.webp") !important;
     width: 100% !important;
     height: 100% !important;
     display: inline-block !important;
@@ -127,7 +127,7 @@ body {
 
 #sidebar #sidebar-tabs i.fa-users {
     content: "";
-    background-image: url("../ui/sidebar/sidebar_button-actors.webp") !important;
+    background-image: url("../ui/sidebar/sidebar-button-actors.webp") !important;
     width: 100% !important;
     height: 100% !important;
     display: inline-block !important;
@@ -142,7 +142,7 @@ body {
 
 #sidebar #sidebar-tabs i.fa-suitcase {
     content: "";
-    background-image: url("../ui/sidebar/sidebar_button-object.webp") !important;
+    background-image: url("../ui/sidebar/sidebar-button-items.webp") !important;
     width: 100% !important;
     height: 100% !important;
     display: inline-block !important;
@@ -157,7 +157,7 @@ body {
 
 #sidebar #sidebar-tabs i.fa-book-open {
     content: "";
-    background-image: url("../ui/sidebar/sidebar_button-journal.webp") !important;
+    background-image: url("../ui/sidebar/sidebar-button-journal.webp") !important;
     width: 100% !important;
     height: 100% !important;
     display: inline-block !important;
@@ -172,7 +172,7 @@ body {
 
 #sidebar #sidebar-tabs i.fa-th-list {
     content: "";
-    background-image: url("../ui/sidebar/sidebar_button-rolltable.webp") !important;
+    background-image: url("../ui/sidebar/sidebar-button-tables.webp") !important;
     width: 100% !important;
     height: 100% !important;
     display: inline-block !important;
@@ -187,7 +187,7 @@ body {
 
 #sidebar #sidebar-tabs i.fa-music {
     content: "";
-    background-image: url("../ui/sidebar/sidebar_button-playlist.webp") !important;
+    background-image: url("../ui/sidebar/sidebar-button-playlists.webp") !important;
     width: 100% !important;
     height: 100% !important;
     display: inline-block !important;
@@ -202,7 +202,7 @@ body {
 
 #sidebar #sidebar-tabs i.fa-atlas {
     content: "";
-    background-image: url("../ui/sidebar/sidebar_button-compendium.webp") !important;
+    background-image: url("../ui/sidebar/sidebar-button-compendium.webp") !important;
     width: 100% !important;
     height: 100% !important;
     display: inline-block !important;
@@ -217,7 +217,7 @@ body {
 
 #sidebar #sidebar-tabs i.fa-cogs {
     content: "";
-    background-image: url("../ui/sidebar/sidebar_button-settings.webp") !important;
+    background-image: url("../ui/sidebar/sidebar-button-settings.webp") !important;
     width: 100% !important;
     height: 100% !important;
     display: inline-block !important;
@@ -227,6 +227,21 @@ body {
 }
 
 #sidebar #sidebar-tabs i.fa-cogs::before {
+    content: "";
+}
+
+#sidebar #sidebar-tabs i.fa-id-badge {
+    content: "";
+    background-image: url("../ui/sidebar/sidebar-button-cards.webp") !important;
+    width: 100% !important;
+    height: 100% !important;
+    display: inline-block !important;
+    background-position:center !important;
+    background-size:100% !important;
+    background-repeat: no-repeat;
+}
+
+#sidebar #sidebar-tabs i.fa-id-badge::before {
     content: "";
 }
 
@@ -567,10 +582,6 @@ body {
 /*=================== PLAYERS LIST ==========================*/
 /*************************************************************/
 #players {
-    position: fixed;
-    bottom: 25px;
-    left: 13px;
-    width: 200px;
     border: 1px solid blue;
     border-image: url(../ui/frames/players-border.webp) 21 repeat;
     border-image-slice: 23 19 23 19;
@@ -599,20 +610,24 @@ body {
 /******************************************************************/
 
   /* ==================== (A) WINDOW FRAMEWORK ================== */
+ 
   #hotbar {
     font-family: CaslonPro;
     font-weight: 500;
     font-size: 14px;
     width: 600px;
     height: 60px;
+    left: 238px;
+    margin-left: 15px
   }    
 
   #hotbar #action-bar {
     flex: 1;
     height: 100%;
     justify-content: space-evenly;
-  }
-  #hotbar #action-bar #macro-list {
+  } 
+
+   #hotbar #action-bar #macro-list {
     flex: 0 0 510px;
     height: 100%;
     list-style: none;
