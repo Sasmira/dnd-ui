@@ -56,6 +56,16 @@ body {
     background-position: center !important;
     background-size: 100% 100%!important;
     background-repeat: no-repeat;
+    padding: 1rem 0px 0px 0px;
+    display: list-item;
+    top: 1rem;
+}
+
+@supports (-moz-appearance:none) {
+    #sidebar.collapsed {
+        display: inline-table !important;
+        padding: 1.5rem 0px 0px 0px;
+    }
 }
 
 #sidebar-tabs{
@@ -63,7 +73,12 @@ body {
 }
 
 #sidebar #sidebar-tabs > .item {
+    margin: 0px 0px 5px 0;
     line-height: 0px;
+}
+
+#sidebar.collapsed #sidebar-tabs > .item.active {
+    margin: 0px 0px 5px 0;
 }
 
 #sidebar #sidebar-tabs i.fa-comments {

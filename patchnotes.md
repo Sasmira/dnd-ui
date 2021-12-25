@@ -1,4 +1,9 @@
 # Patchnotes
+## Compatibility
+- Ready for v9 version.
+
+## v9.238.1
+- fix sidebar collapsed thank's you @Prolice for your help
 
 ## v9.235.1
 - First release for Foundry VTT v9
