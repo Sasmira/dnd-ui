@@ -2,6 +2,9 @@
 ## Compatibility
 - Ready for v9 version.
 
+## v9.238.2
+- Back to the olds icons !
+
 ## v9.238.1
 - fix sidebar collapsed thank's you @Prolice for your help
 
