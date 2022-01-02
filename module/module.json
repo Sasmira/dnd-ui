@@ -6,7 +6,7 @@
   "authors": [],
   "url": "https://gitlab.com/sasmira/dnd-ui",
   "flags": {},
-  "version": "9.238.2",
+  "version": "9.238.3",
   "minimumCoreVersion": "9",
   "compatibleCoreVersion": "10",
   "scripts": [
@@ -43,7 +43,7 @@
   "dependencies": [],
   "socket": false,
   "manifest": "https://gitlab.com/sasmira/dnd-ui/-/raw/master/module/module.json",
-  "download": "https://gitlab.com/sasmira/dnd-ui/-/jobs/artifacts/v9.238.2/raw/dnd-ui.zip?job=build",
+  "download": "https://gitlab.com/sasmira/dnd-ui/-/jobs/artifacts/v9.238.3/raw/dnd-ui.zip?job=build",
   "protected": false,
   "coreTranslation": false,
   "library": false

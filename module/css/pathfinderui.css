@@ -97,7 +97,7 @@ body {
 }
 #sidebar-tabs > .item {
     line-height: 0px;
-    flex: 0 0 25px;
+    flex: 0 0 var(--sidebar-tab-width);
     height: 25px;
     border-radius: 100%;
 }
@@ -257,6 +257,21 @@ body {
 }
 
 #sidebar #sidebar-tabs i.fa-id-badge::before {
+    content: "";
+}
+
+#sidebar #sidebar-tabs i.fa-terminal {
+    content: "";
+    background-image: url("../ui/sidebar/sidebar-button-macros.webp") !important;
+    width: 100% !important;
+    height: 100% !important;
+    display: inline-block !important;
+    background-position:center !important;
+    background-size:100% !important;
+    background-repeat: no-repeat;
+}
+
+#sidebar #sidebar-tabs i.fa-terminal::before {
     content: "";
 }
 

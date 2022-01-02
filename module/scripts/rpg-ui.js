@@ -1,20 +1,3 @@
-Hooks.on('init', () => {
-	// Register module settings.
-	game.settings.register('dnd-ui', 'disableAllStyles', {
-		name: game.i18n.localize('RPGUI.SETTINGS.DISABLE_STYLES'),
-		hint: game.i18n.localize('RPGUI.SETTINGS.DISABLE_STYLES_HINT'),
-		scope: "client",
-		type: Boolean,
-		default: false,
-		config: true,
-		onChange: () => {
-			location.reload();
-		}
-	});
-
-	if (!game.settings.get('dnd-ui', 'disableAllStyles')) { rpgUIAddMainCss() }
-});
-
 Hooks.on('renderCombatCarousel', () => {
 	let carouselSize = game.settings.get('combat-carousel', 'carouselSize')
 	if (carouselSize !== "") {

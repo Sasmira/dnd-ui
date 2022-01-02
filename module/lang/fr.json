@@ -4,6 +4,8 @@
     
     "RPGUI.SETTINGS.DISABLE_STYLES": "Désactiver DnD5e Ui",
     "RPGUI.SETTINGS.DISABLE_STYLES_HINT": "Il s'agit d'un paramètre local, avec lequel tout joueur peut désactiver les styles",
+    "RPGUI.SETTINGS.DISABLE_CHAT_COLOR": "Désactiver la Couleur du Chat",
+	"RPGUI.SETTINGS.DISABLE_CHAT_COLOR_HINT": "Cela désactive les changements de couleur du chat.",
 
 	"HEXA.COLOR" : "Entrer une couleur hexadécimale (telle que #FFFFFF).",
     "IC.BG.COLOR": "Couleur de fond dans le chat",

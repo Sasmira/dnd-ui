@@ -1,4 +1,20 @@
 Hooks.on('init', () => {
+	// Register module settings.
+	game.settings.register('dnd-ui', 'disableAllStyles', {
+		name: game.i18n.localize('RPGUI.SETTINGS.DISABLE_STYLES'),
+		hint: game.i18n.localize('RPGUI.SETTINGS.DISABLE_STYLES_HINT'),
+		scope: "client",
+		type: Boolean,
+		default: false,
+		config: true,
+		onChange: () => {
+			location.reload();
+		}
+	});
+
+	if (!game.settings.get('dnd-ui', 'disableAllStyles')) { rpgUIAddMainCss() }
+});
+Hooks.on('init', () => {
     // Register module settings.
 	game.settings.register('dnd-ui', 'icBgColor', {
 		name: game.i18n.localize('IC.BG.COLOR'),
@@ -75,6 +91,7 @@ Hooks.on('init', () => {
 });
 
 Hooks.on("renderChatLog", (log, html) => {
+	if (!game.settings.get('dnd-ui', 'disableChatColort'))	{
     // Prepend inline CSS to the chatlog to style the chat messages.
     icBgColor = game.settings.get('dnd-ui', 'icBgColor');
     icTextColor = game.settings.get('dnd-ui', 'icTextColor');
@@ -96,6 +113,7 @@ Hooks.on("renderChatLog", (log, html) => {
     "; color: " + otherTextColor + 
     " }\n #chat-log .message .message-header { color: " + otherTextColor + 
     "; } </style>").prependTo(html);
+	}
 });
 
 Hooks.on("chatMessage", (chatLog, message, chatData) => {
