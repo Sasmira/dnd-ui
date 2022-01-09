@@ -635,19 +635,20 @@ body {
     padding-top: 3px;
   }
 
-/******************************************************************/
-/*========================= HOTBAR ===============================*/
-/******************************************************************/
+/*************************************************************/
+/*========================= HOTBAR ==========================*/
+/*************************************************************/
 
-  /* ==================== (A) WINDOW FRAMEWORK ================== */
+#ui-bottom > div {
+    justify-content: left;
+}
  
-  #hotbar {
+#hotbar {
     font-family: CaslonPro;
     font-weight: 500;
     font-size: 14px;
     width: 600px;
     height: 60px;
-    left: 238px;
     margin-left: 15px
   }    
 
@@ -655,9 +656,8 @@ body {
     flex: 1;
     height: 100%;
     justify-content: space-evenly;
-  } 
-
-   #hotbar #action-bar #macro-list {
+  }
+  #hotbar #action-bar #macro-list {
     flex: 0 0 510px;
     height: 100%;
     list-style: none;
@@ -701,4 +701,12 @@ body {
       line-height: 8px;
       position: relative;
       top: 4px;
+    }
+
+ #fps {
+        position: absolute;
+        right: 300px;
+        order: 2;
+        border: 0px solid var(--color-border-light-tertiary);
+        border-radius: 5px;
     }
