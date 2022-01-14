@@ -2,6 +2,9 @@
 ## Compatibility
 - Ready for v9 version.
 
+## v9.242.2
+- add Dungeon Crawl Classics Support 
+
 ## v9.242.1
 - Macro Bar can to be move now with Minimal Ui
 

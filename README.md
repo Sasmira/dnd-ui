@@ -1,2 +1,2 @@
 # DnD5e ui
-Theme for DnD5e, Fork of Pathfinder Ui
+Just a little theme for DnD5e and DCC (Dungeon Crawl Classics), Fork of Pathfinder Ui v2 Legacy.
