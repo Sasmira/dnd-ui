@@ -491,6 +491,10 @@ body {
 /*************************************************************/
 /*================== NAVIGATION BAR =========================*/
 /*************************************************************/
+#navigation {
+    width: calc(100% - 340px);
+    }
+
 #navigation #scene-list .scene.view, #navigation #scene-list .scene.context {
     cursor: default; 
     color: #FFF;

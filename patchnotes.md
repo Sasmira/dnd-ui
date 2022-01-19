@@ -2,6 +2,9 @@
 ## Compatibility
 - Ready for v9 version.
 
+## v9.242.3
+- fix Nav bar lengh
+
 ## v9.242.2
 - add Dungeon Crawl Classics Support 
 
