@@ -2,6 +2,9 @@
 ## Compatibility
 - Ready for v9 version.
 
+## v9.245.1
+- Sidebar Macro Icon fixed
+
 ## v9.242.3
 - fix Nav bar lengh
 
