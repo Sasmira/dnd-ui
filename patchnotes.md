@@ -2,6 +2,9 @@
 ## Compatibility
 - Ready for v9 version.
 
+## v9.245.2
+- Sets the length of the navigation bar and the loading bar.
+
 ## v9.245.1
 - Sidebar Macro Icon fixed
 
