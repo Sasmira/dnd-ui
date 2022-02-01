@@ -226,14 +226,14 @@
     background-size: 100% 100%;
     z-index: 1;
 }
-
+ /*
 #combat-carousel .combat-controls a.turn {
-    /*top: calc(48% + 10px);*/
+   top: calc(48% + 10px);
 }
 
 #combat-carousel .combat-controls a.round {
-    /*top: calc(0% + 45px);*/
-}
+    top: calc(0% + 45px);
+}*/
 
 #combat-carousel .encounter-info {
     background: none;
@@ -354,12 +354,12 @@
 #controls li[data-control="combat-carousel"]::before{
     position: absolute;
     content: " ";
-    width: 32px;
-    height: 32px;
-    left: 8px;
-    top: 8px;
+    width: 30px;
+    height: 30px;
+    left: 3px;
+    top: 3px;
 
-    background-color: #837360;
+    background-color: white;
     -webkit-mask: url("/modules/combat-carousel/icons/combat-carousel-solid2.svg") no-repeat center;
     mask: url("/modules/combat-carousel/icons/combat-carousel-solid2.svg") no-repeat center;
 }
