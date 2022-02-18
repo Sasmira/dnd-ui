@@ -39,8 +39,7 @@
   "packs": [],
   "system": [
     "dnd5e",
-    "dcc",
-    "pf2e"
+    "dcc"
   ],
   "dependencies": [],
   "socket": false,
