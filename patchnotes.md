@@ -2,7 +2,7 @@
 ## Compatibility
 - Ready for v9 version.
 
-## v9.249.5
+## v9.245.5
 - Add support Minimal Ui (see option)
 - add support DF Chat Enhancements
 
