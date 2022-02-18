@@ -635,6 +635,11 @@ body {
 .minimal-ui-mode #ui-bottom > div {
     justify-content: inherit!important;
 }
+
+.minimal-ui-mode #players {
+    position: static !important;
+}
+
 .minimal-ui-mode #navigation #scene-list {
     margin-left: 16px;
 }
@@ -676,28 +681,86 @@ body {
 /*=================== PLAYERS LIST ==========================*/
 /*************************************************************/
 #players {
-    border: 1px solid blue;
+    background: black;
     border-image: url(../ui/frames/players-border.webp) 21 repeat;
     border-image-slice: 23 19 23 19;
     border-image-width: 23px 19px 23px 19px;
     border-image-outset: 22px 17px 16px 14px;
-    border-radius: 0px;
-    box-shadow: inset 0 0 10px #000000;
-    background: #000000e8;
-    font-family: CaslonPro;
-    font-weight: 500;
-    font-size: 14px;
-  }
-    #players h3 .fas.fa-users {
-      margin-right: 10px;
-      display: none;
-    }
-  #players ol .player-name {
-    overflow: hidden;
-    white-space: nowrap;
-    word-break: break-all;
-    padding-top: 3px;
-  }
+    box-shadow: none;
+    bottom: 25px;
+    left: 25px;
+}
+
+#players h3 .players-mode {
+    position: relative;
+    float: right;
+    top: 10px;
+    right: -12px;
+}
+
+#players h3 .players-mode::after {
+    position: absolute;
+    content: " ";
+    width: 34px;
+    height: 32px;
+    top: -7px;
+    z-index: -1;
+    opacity: 0.6;
+    left: -11px;
+}
+
+#players h3 {
+    position: relative;
+    color: #e9e9da;
+    border-bottom: none;
+    font-family: 'Kurale', serif;
+    font-weight: 800;
+    
+    text-shadow: 2px 0 0 var(--border-color),
+                -2px 0 0 var(--border-color),
+                0 2px 0 var(--border-color),
+                0 -2px 0 var(--border-color),
+                1px 1px var(--border-color),
+                -1px -1px 0 var(--border-color),
+                1px -1px 0 var(--border-color),
+                -1px 1px 0 var(--border-color);
+}
+
+#players h3::before {
+    position: absolute;
+    content: " ";
+    width: 120%;
+    height: 130%;
+    top: -15%;
+    z-index: -1;
+    left: -10%;
+}
+
+#players ol {
+    position: relative;
+    font-family: 'Kurale', serif;
+    font-weight: 400;
+}
+
+#players ol::before{
+    position: absolute;
+    content: " ";
+    width: 120%;
+    height: 130%;
+    z-index: -1;
+    left: -10%;
+}
+
+#players ol li.player {
+    text-shadow: 2px 0 0 var(--border-color),
+    -2px 0 0 var(--border-color),
+    0 2px 0 var(--border-color),
+    0 -2px 0 var(--border-color),
+    1px 1px var(--border-color),
+    -1px -1px 0 var(--border-color),
+    1px -1px 0 var(--border-color),
+    -1px 1px 0 var(--border-color);
+}
 
 /*************************************************************/
 /*========================= HOTBAR ==========================*/
@@ -712,8 +775,9 @@ body {
     font-weight: 500;
     font-size: 14px;
     width: 600px;
-    height: 60px;
-    margin-left: 15px
+    height: 59px;
+    margin-bottom: 5px;
+    margin-left: 5px;
   }    
 
   #hotbar #action-bar {

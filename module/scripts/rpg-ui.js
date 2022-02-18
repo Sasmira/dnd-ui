@@ -27,18 +27,6 @@ if (!game.settings.get('dnd-ui', 'disableAllStyles')) { rpgUIAddMainCss() }
 if (game.settings.get('dnd-ui', 'minimalUICompatibility')) { addClassByQuerySelector('minimal-ui-mode', 'body.vtt') }
 });
 
-Hooks.on('getSceneNavigationContext', () => {
-if (!game.settings.get('dnd-ui', 'navigationVerticalToggle')) {
-	navigation = document.querySelector("nav.app > ol#scene-list");
-	if (navigation) {
-		navigation.classList.add("vertical")
-	}
-}
-if (game.settings.get('dnd-ui', 'compactModeToggle')) {
-	addClassByQuerySelector("compact-mode", "body")
-}
-});
-
 Hooks.on('renderCombatCarousel', () => {
 let carouselSize = game.settings.get('combat-carousel', 'carouselSize')
 if (carouselSize !== "") {
