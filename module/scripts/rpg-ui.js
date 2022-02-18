@@ -12,14 +12,38 @@ Hooks.on('init', () => {
 		}
 	});
 
-	if (!game.settings.get('dnd-ui', 'disableAllStyles')) { rpgUIAddMainCss() }
+game.settings.register('dnd-ui', 'minimalUICompatibility', {
+	name: game.i18n.localize('RPGUI.SETTINGS.MINIMAL_UI'),
+	hint: game.i18n.localize('RPGUI.SETTINGS.MINIMAL_UI_HINT'),
+	scope: "world",
+	type: Boolean,
+	default: false,
+	config: true,
+	onChange: () => {
+		location.reload();
+	}
+});
+if (!game.settings.get('dnd-ui', 'disableAllStyles')) { rpgUIAddMainCss() }
+if (game.settings.get('dnd-ui', 'minimalUICompatibility')) { addClassByQuerySelector('minimal-ui-mode', 'body.vtt') }
+});
+
+Hooks.on('getSceneNavigationContext', () => {
+if (!game.settings.get('dnd-ui', 'navigationVerticalToggle')) {
+	navigation = document.querySelector("nav.app > ol#scene-list");
+	if (navigation) {
+		navigation.classList.add("vertical")
+	}
+}
+if (game.settings.get('dnd-ui', 'compactModeToggle')) {
+	addClassByQuerySelector("compact-mode", "body")
+}
 });
 
 Hooks.on('renderCombatCarousel', () => {
-	let carouselSize = game.settings.get('combat-carousel', 'carouselSize')
-	if (carouselSize !== "") {
-		addClassByQuerySelector(carouselSize, "#combat-carousel")
-	}
+let carouselSize = game.settings.get('combat-carousel', 'carouselSize')
+if (carouselSize !== "") {
+	addClassByQuerySelector(carouselSize, "#combat-carousel")
+}
 });
 
 function addClassByQuerySelector(className, selector) {
@@ -45,3 +69,25 @@ Hooks.on('renderSidebarTab', async (object, html) => {
 	  details.append(list.firstChild)
 	}
 })
+
+  /* -------------------------------------------- */
+// Register world usage statistics
+function registerUsageCount( registerKey ) {
+	if ( game.user.isGM ) {
+	  game.settings.register(registerKey, "world-key", {
+		name: "Unique world key",
+		scope: "world",
+		config: false,
+		type: String
+	  });
+  
+	  let worldKey = game.settings.get(registerKey, "world-key")
+	  if ( worldKey == undefined || worldKey == "" ) {
+		worldKey = randomID(32)
+		game.settings.set(registerKey, "world-key", worldKey )
+	  }
+	  // Simple API counter
+	  $.ajax(`https://jdr.lahiette.com/fvtt_appcount/count.php?name="${registerKey}"&worldKey="${worldKey}"&version="${game.release.generation}.${game.release.build}"&system="${game.system.id}"&systemversion="${game.system.data.version}"`)
+	  /* -------------------------------------------- */
+	}
+  }

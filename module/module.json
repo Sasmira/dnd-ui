@@ -1,12 +1,12 @@
 {
   "name": "dnd-ui",
   "title": "DnD5e Ui",
-  "description": "Theme for DnD5e and DCC. <p>*** Join the official Discord server: <a href='https://discord.gg/foundryvtt'> Official Discord</a></p><p>*** Rejoignez la communauté Francophone: <a href='https://discord.gg/pPSDNJk'>Francophone Discord</a></p>",
+  "description": "Theme for DnD5e and DCC. <p>*** Join the official Discord server: <a href=\"https://discord.gg/foundryvtt\"> Official Discord</a></p><p>*** Rejoignez la communauté Francophone: <a href=\"https://discord.gg/pPSDNJk\">Francophone Discord</a></p>",
   "author": "Sasmira",
   "authors": [],
   "url": "https://gitlab.com/sasmira/dnd-ui",
   "flags": {},
-  "version": "9.245.4",
+  "version": "9.245.5",
   "minimumCoreVersion": "9",
   "compatibleCoreVersion": "9",
   "scripts": [
@@ -44,7 +44,7 @@
   "dependencies": [],
   "socket": false,
   "manifest": "https://gitlab.com/sasmira/dnd-ui/-/raw/master/module/module.json",
-  "download": "https://gitlab.com/sasmira/dnd-ui/-/jobs/artifacts/v9.245.4/raw/dnd-ui.zip?job=build",
+  "download": "https://gitlab.com/sasmira/dnd-ui/-/jobs/artifacts/v9.245.5/raw/dnd-ui.zip?job=build",
   "protected": false,
   "coreTranslation": false,
   "library": false

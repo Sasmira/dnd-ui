@@ -4,6 +4,9 @@
   "RPGUI.SETTINGS.DISABLE_STYLES": "Disable DnD5e Ui",
   "RPGUI.SETTINGS.DISABLE_STYLES_HINT": "This is a local setting, with which any player can turn off styles",
 
+  "RPGUI.SETTINGS.MINIMAL_UI": "Minimal UI support",
+  "RPGUI.SETTINGS.MINIMAL_UI_HINT": "Fixes some (not all) of the problems with minimal UI",
+  
   "HEXA.COLOR": "Digite uma cor hexadecimal (ex. #FFFFFF).",
   "IC.BG.COLOR": "IC Cor de Fundo",
   "IC.TEXT.COLOR": "IC Cor do Texto",

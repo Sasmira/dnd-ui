@@ -2,6 +2,10 @@
 ## Compatibility
 - Ready for v9 version.
 
+## v9.249.5
+- Add support Minimal Ui (see option)
+- add support DF Chat Enhancements
+
 ## v9.245.4
 - Fix Combat Carousel controls icon 
 

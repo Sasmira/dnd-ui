@@ -503,121 +503,173 @@ body {
     width: calc(100% - 340px);
     }
 
-#navigation #scene-list .scene.view, #navigation #scene-list .scene.context {
-    cursor: default; 
-    color: #FFF;
-    background: url(../ui/sidebar/sidebar_button-background_red.webp) repeat;
-    background-origin: padding-box;
-    border-image: url(../ui/sidebar/sidebar_button-footer-button.webp) 10 repeat;
-    border-image-width: 4px;
-    border-image-outset: 0px;
-    box-shadow: 0 0 20px red;
-  }
-  
-  #navigation #nav-toggle {
-    cursor: default; 
-    color: #FFF;
-    background: url(../ui/sidebar/sidebar_button-background_cyan.webp) repeat;
-    background-origin: padding-box;
-    border-image: url(../ui/sidebar/sidebar_button-footer-button.webp) 10 repeat;
-    border-image-width: 4px;
-    border-image-outset: 0px;
-    font-family: CaslonPro;
-    font-weight: 500;
-    font-size: 14px;
-    padding-top: 3px;
-    height: 36px;
-  }
-  
-  #navigation #scene-list .scene.nav-item {
-    cursor: default; 
-    color: #FFF;
-    background: url(../ui/sidebar/sidebar_button-background_cyan.webp) repeat;
-    background-origin: padding-box;
-    border-image: url(../ui/sidebar/sidebar_button-footer-button.webp) 10 repeat;
-    border-image-width: 4px;
-    border-image-outset: 0px;
-    font-family: CaslonPro;
-    font-weight: 500;
-    font-size: 14px;
-    padding-top: 2px;
-  }
-  #navigation #scene-list .scene.nav-item.active {
-    background: url(../ui/sidebar/sidebar_button-background_red.webp) repeat;
-  }
-    #navigation #scene-list .scene li.scene-player {
-      float: left;
-      height: 15px;
-      width: 15px;
-      margin: 0 2px 0 0;
-      line-height: 12px;
-      padding-top: 1px;
-      text-align: center;
-      color: #000000e8;
-      font-weight: 600;
-      background: #97dff4;
-      border: 1px solid #000;
-      border-radius: 8px;
-      font-family: "Signika", "Palatino Linotype", serif;
-      font-size: 13px;
-      box-shadow: inset 0 0 3px #000000;
-    }
-  
-  /*************************************************************/
-  /*=================== SCENE CONTROLS ========================*/
-  /*************************************************************/
-  #controls .scene-control.active, #controls .control-tool.active, #controls .scene-control:hover, #controls .control-tool:hover {
-  cursor: default; 
-  color: #FFF;
-  background: url(../ui/sidebar/sidebar_button-background_red.webp) repeat !important;
-  background-origin: padding-box !important;
-  border-image: url(../ui/sidebar/sidebar_button-footer-button.webp) 10 repeat !important;
-  border-image-width: 4px !important;
-  border-image-outset: 0px !important;
-  box-shadow: 0 0 10px red !important;
-  }
-  
-  #controls .scene-control, #controls .control-tool {
-  width: 36px !important;
-  height: 36px !important;
-  box-sizing: content-box !important;
-  font-size: 19px !important;
-  line-height: 36px !important;
-  background: rgba(0, 0, 0, 0.5) !important;
-  box-shadow: 0 0 3px #000 !important;
-  margin: 0 0 8px !important;
-  color: #BBB !important;
-  text-align: center !important;
-  border: 1px solid #000 !important;
-  border-radius: 5px !important;
-  cursor: pointer !important; 
-  cursor: default !important; 
-  color: #FFF !important;
-  background: url(../ui/sidebar/sidebar_button-background_cyan.webp) repeat !important;
-  background-origin: padding-box !important;
-  border-image: url(../ui/sidebar/sidebar_button-footer-button.webp) 10 repeat !important;
-  border-image-width: 4px !important;
-  border-image-outset: 0px !important;
-  }
+#navigation #nav-toggle {
+    background: none;
+    border: none;
+}
 
-  #controls .scene-control > i::after, #controls li[data-control="combat-carousel"]::after {
+#navigation .nav-item {
+    margin: 0 14px 8px 0;
+}
+
+#navigation #scene-list.vertical .scene.nav-item {
+    float: none;
+    width: fit-content;
+    display: table;
+}
+
+#navigation #scene-list .scene.nav-item {
+    float: left;
+    border: none;
+    background: none;
+    min-width: 80px;
+    text-align: center;
+}
+
+#nav-toggle {
+    width: 36px;
+    height: 36px;
+    color: var(--main-text-light-color);
+}
+
+#nav-toggle::after {
     position: absolute;
     content: " ";
-    width: 53px;
-    height: 53px;
-    left: -12px;
-    top: -12px;
+    width: 50px;
+    height: 50px;
+    left: -8px;
+    top: -9px;
+    background: url(../ui/buttons/controls_btn.webp);
+    background-size: 100% 100%;
     z-index: -2;
     opacity: 0.88;
 }
 
-#controls li[data-control="combat-carousel"] {
+
+#navigation #scene-list .scene.nav-item {
+    position: relative;
+    color: var(--main-text-light-color);
+    font-weight: 600;
+}
+
+#navigation #scene-list .scene.nav-item::before {
+    position: absolute;
+    content: " ";
+    width: 120%;
+    height: 130%;
+    top: -15%;
+    background: url(../ui/buttons/controls_btn.webp);
+    background-size: 100% 100%;
+    z-index: -1;
+    left: -10%;
+    opacity: 0.88;
+}
+
+#navigation #scene-list .scene.view, #navigation #scene-list .scene.context {
+    box-shadow: none;
+}
+  
+  /*************************************************************/
+  /*=================== SCENE CONTROLS ========================*/
+  /*************************************************************/
+
+#controls ol .scene-control,
+#controls ol .control-tool {
+    background: none;
+    box-shadow: none;
+    border: none;
+    color: #837360;
+}
+
+#controls ol .scene-control.active,
+#controls ol .control-tool.active,
+#controls ol .scene-control:hover,
+#controls ol .control-tool:hover {
+    border: none;
+    box-shadow: none;
+}
+
+#controls ol .scene-control.active:before,
+#controls ol .control-tool.active:before,
+#controls ol .scene-control:hover:before,
+#controls ol .control-tool:hover:before {
+    background: url(../ui/buttons/controls_btn_accent.webp);
+    background-size: 100% 100%;
+    cursor: default;
+}
+
+#controls ol > li {
     position: relative;
 }
 
-#controls li[data-control="combat-carousel"]::after {
-    left: 0px;
-    top: 0px;
+#controls ol > li.scene-control:before,
+#controls ol > li.control-tool:before
+{
+    position: absolute;
+    left: -9%;
+    top: -15%;
+
+    content: " ";
+    width: 130%;
+    height: 130%;
+
+    background: url(../ui/buttons/controls_btn.webp);
+    background-size: 100% 100%;
+    z-index: -2;
+    opacity: 0.88;
+    cursor: pointer !important; 
+    cursor: default !important;
+}
+
+/* Minimal UI */
+/* https://github.com/saif-ellafi/foundryvtt-minimal-ui/issues */
+.minimal-ui-mode #controls ol li.scene-control[data-control="combat-carousel"] {
+    width: var(--controlsw)!important;
+    height: var(--controlsh)!important;
+}
+.minimal-ui-mode #controls li[data-control="combat-carousel"]::after {
+    width: calc(var(--controlsw) - 10px)!important;
+    height: calc(var(--controlsh) - 10px)!important;
+}
+
+.minimal-ui-mode #ui-bottom > div {
+    justify-content: inherit!important;
+}
+.minimal-ui-mode #navigation #scene-list {
+    margin-left: 16px;
+}
+.minimal-ui-mode #controls ol.main-controls {
+    width: 60px;
+}
+
+:root{
+    --glassy: 0px 0px 2px rgba(255, 255, 255, 0.4) inset, 0px 0px 6px rgba(255, 255, 255, 0.2) inset, 1px 1px 1px rgba(0, 0, 0, 1), 1px -1px 1px rgba(0, 0, 0, 1), -1px -1px 1px rgba(0, 0, 0, 1), -1px 1px 1px rgba(0, 0, 0, 1), 0px 0px 3px rgba(0, 0, 0, 1), 0px 0px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* DF Chat Enhancements */
+/* https://github.com/flamewave000/dragonflagon-fvtt/tree/master/df-chat-enhance */
+#dfcp-rt-buttons button {
+    transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
+    background: var(--glassy);
+    border: none;
+    border-radius: 50%;
+    color: #cfbda7;
+    box-shadow: var(--glassy);
+    cursor: pointer;
+}
+
+#dfcp-rt-buttons button:hover {
+    color: #ff6400;
+    border-color: #ff6400;
+    box-shadow: 0 0 6px inset #ff6400;
+}
+
+#dfcp-rt-buttons button[data-id=publicroll].active {
+    background-color: #91a82a;
+}
+
+#dfcp-rt-buttons button[data-id=selfroll].active {
+    background-color: #ff6400;
 }
 
  /*************************************************************/
