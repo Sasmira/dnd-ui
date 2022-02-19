@@ -675,6 +675,18 @@ body {
     font-size: var(--playerfsize);
     visibility: var(--playervis);
     opacity: var(--opacity);
+    box-shadow: none;
+    position: absolute;
+    border: 1px solid var(--glassy);
+    background: var(--glassy);
+}
+
+.minimal-ui-mode #players:hover {
+    bottom: var(--playerbot);
+    left: var(--playerleft);
+    font-size: var(--playerfsize);
+    visibility: var(--playervis);
+    opacity: var(--opacity);
     box-shadow: 0 var(--hotbarshp) var(--shadowstrength) 2px var(--shadowcolor);
     position: absolute;
     border: 1px solid var(--bordercolor);
