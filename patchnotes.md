@@ -2,6 +2,9 @@
 ## Compatibility
 - Ready for v9 version.
 
+## v9.249.6
+Fix combat carousel initiative button (Xbozon)
+
 ## v9.249.5
 - update support Minimal Ui (see option)
 
