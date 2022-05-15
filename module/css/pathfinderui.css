@@ -83,13 +83,15 @@ body {
 
 #sidebar #sidebar-tabs i.fa-comments {
     content: "";
-    background-image: url("../ui/sidebar/sidebar-button-chat.webp") !important;
+    background-image: url("../ui/sidebar/comment-solid.webp") !important;
+    background-color: #791613;
     width: 100% !important;
     height: 100% !important;
     display: inline-block !important;
     background-position:center !important;
-    background-size:100% !important;
+    background-size:75% !important;
     background-repeat: no-repeat;
+    border-radius: 100%;
 }
 
 #sidebar-tabs {
@@ -103,7 +105,7 @@ body {
 }
 #sidebar-tabs > .item.active {
     color: #FFF;
-    border: 1px solid red;
+    border: 2px solid white;
     box-shadow: 0 0 6px inset #ff6400;
 }
 #sidebar #sidebar-tabs i.fa-comments::before {
@@ -112,13 +114,15 @@ body {
 
 #sidebar #sidebar-tabs i.fa-fist-raised {
     content: "";
-    background-image: url("../ui/sidebar/sidebar-button-combat.webp") !important;
+    background-image: url("../ui/sidebar/hand-fist-solid.webp") !important;
+    background-color: #791613;
     width: 100% !important;
     height: 100% !important;
     display: inline-block !important;
     background-position:center !important;
-    background-size:100% !important;
+    background-size:75% !important;
     background-repeat: no-repeat;
+    border-radius: 100%;
 }
 
 #sidebar #sidebar-tabs i.fa-fist-raised::before {
@@ -127,13 +131,15 @@ body {
 
 #sidebar #sidebar-tabs i.fa-map {
     content: "";
-    background-image: url("../ui/sidebar/sidebar-button-scenes.webp") !important;
+    background-image: url("../ui/sidebar/dungeon-solid.webp") !important;
+    background-color: #791613;
     width: 100% !important;
     height: 100% !important;
     display: inline-block !important;
     background-position:center !important;
-    background-size:100% !important;
+    background-size:75% !important;
     background-repeat: no-repeat;
+    border-radius: 100%;
 }
 
 #sidebar #sidebar-tabs i.fa-map::before {
@@ -142,13 +148,15 @@ body {
 
 #sidebar #sidebar-tabs i.fa-users {
     content: "";
-    background-image: url("../ui/sidebar/sidebar-button-actors.webp") !important;
+    background-image: url("../ui/sidebar/users-solid.webp") !important;
+    background-color: #791613;
     width: 100% !important;
     height: 100% !important;
     display: inline-block !important;
     background-position:center !important;
-    background-size:100% !important;
+    background-size:75% !important;
     background-repeat: no-repeat;
+    border-radius: 100%;
 }
 
 #sidebar #sidebar-tabs i.fa-users::before {
@@ -157,13 +165,15 @@ body {
 
 #sidebar #sidebar-tabs i.fa-suitcase {
     content: "";
-    background-image: url("../ui/sidebar/sidebar-button-items.webp") !important;
+    background-image: url("../ui/sidebar/suitcase-solid.webp") !important;
+    background-color: #791613;
     width: 100% !important;
     height: 100% !important;
     display: inline-block !important;
     background-position:center !important;
-    background-size:100% !important;
+    background-size:75% !important;
     background-repeat: no-repeat;
+    border-radius: 100%;
 }
 
 #sidebar #sidebar-tabs i.fa-suitcase::before {
@@ -172,13 +182,15 @@ body {
 
 #sidebar #sidebar-tabs i.fa-book-open {
     content: "";
-    background-image: url("../ui/sidebar/sidebar-button-journal.webp") !important;
+    background-image: url("../ui/sidebar/book-open-solid.webp") !important;
+    background-color: #791613;
     width: 100% !important;
     height: 100% !important;
     display: inline-block !important;
     background-position:center !important;
-    background-size:100% !important;
+    background-size:75% !important;
     background-repeat: no-repeat;
+    border-radius: 100%;
 }
 
 #sidebar #sidebar-tabs i.fa-book-open::before {
@@ -187,13 +199,15 @@ body {
 
 #sidebar #sidebar-tabs i.fa-th-list {
     content: "";
-    background-image: url("../ui/sidebar/sidebar-button-tables.webp") !important;
+    background-image: url("../ui/sidebar/table-list-solid.webp") !important;
+    background-color: #791613;
     width: 100% !important;
     height: 100% !important;
     display: inline-block !important;
     background-position:center !important;
-    background-size:100% !important;
+    background-size:75% !important;
     background-repeat: no-repeat;
+    border-radius: 100%;
 }
 
 #sidebar #sidebar-tabs i.fa-th-list::before {
@@ -202,13 +216,15 @@ body {
 
 #sidebar #sidebar-tabs i.fa-music {
     content: "";
-    background-image: url("../ui/sidebar/sidebar-button-playlists.webp") !important;
+    background-image: url("../ui/sidebar/guitar-solid.webp") !important;
+    background-color: #791613;
     width: 100% !important;
     height: 100% !important;
     display: inline-block !important;
     background-position:center !important;
-    background-size:100% !important;
+    background-size:75% !important;
     background-repeat: no-repeat;
+    border-radius: 100%;
 }
 
 #sidebar #sidebar-tabs i.fa-music::before {
@@ -217,13 +233,15 @@ body {
 
 #sidebar #sidebar-tabs i.fa-atlas {
     content: "";
-    background-image: url("../ui/sidebar/sidebar-button-compendium.webp") !important;
+    background-image: url("../ui/sidebar/book-atlas-solid.webp") !important;
+    background-color: #791613;
     width: 100% !important;
     height: 100% !important;
     display: inline-block !important;
     background-position:center !important;
-    background-size:100% !important;
+    background-size:75% !important;
     background-repeat: no-repeat;
+    border-radius: 100%;
 }
 
 #sidebar #sidebar-tabs i.fa-atlas::before {
@@ -232,13 +250,15 @@ body {
 
 #sidebar #sidebar-tabs i.fa-cogs {
     content: "";
-    background-image: url("../ui/sidebar/sidebar-button-settings.webp") !important;
+    background-image: url("../ui/sidebar/gear-solid.webp") !important;
+    background-color: #791613;
     width: 100% !important;
     height: 100% !important;
     display: inline-block !important;
     background-position:center !important;
-    background-size:100% !important;
+    background-size:75% !important;
     background-repeat: no-repeat;
+    border-radius: 100%;
 }
 
 #sidebar #sidebar-tabs i.fa-cogs::before {
@@ -247,13 +267,15 @@ body {
 
 #sidebar #sidebar-tabs i.fa-id-badge {
     content: "";
-    background-image: url("../ui/sidebar/sidebar-button-cards.webp") !important;
+    background-image: url("../ui/sidebar/id-badge-regular.webp") !important;
+    background-color: #791613;
     width: 100% !important;
     height: 100% !important;
     display: inline-block !important;
     background-position:center !important;
-    background-size:100% !important;
+    background-size:75% !important;
     background-repeat: no-repeat;
+    border-radius: 100%;
 }
 
 #sidebar #sidebar-tabs i.fa-id-badge::before {
@@ -262,13 +284,15 @@ body {
 
 #sidebar #sidebar-tabs i.fa-code {
     content: "";
-    background-image: url("../ui/sidebar/sidebar-button-macros.webp") !important;
+    background-image: url("../ui/sidebar/code-solid.webp") !important;
+    background-color: #791613;
     width: 100% !important;
     height: 100% !important;
     display: inline-block !important;
     background-position:center !important;
-    background-size:100% !important;
+    background-size:75% !important;
     background-repeat: no-repeat;
+    border-radius: 100%;
 }
 
 #sidebar #sidebar-tabs i.fa-code::before {
